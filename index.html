@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
     <title>Document</title>
 </head>
-
+ <!-- Corps du site internet -->
 <body>
-    <header>
-        <nav></nav>
-        <div class="head">
-            <div>bonjour</div>
-        </div>
-    </header>
-    <div class="bloc1">
-        <div></div>
-        <div class="bloc-img"></div>
-    </div>
-    <div class="mini-bloc">
-    </div>
-    <h1></h1>
-    <div class="bloc2">
-        <span></span>
-        <div class="sous-bloc1"></div>
-        <div class="sous-bloc2"></div>
-        <div class="sous-bloc3"></div>
-        <div class="sous-bloc4"></div>
-    </div>
-    <div class="bloc3">
-        <div class="direction"></div>
-        <div class="equipe-commeerciale"></div>
-    </div>
-    <div class="last-bloc"></div>
-    <footer>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </footer>
-</body>
+    
+    <!-- elements d'entete du site comprenant le logo et les elements de menu -->
+    <header-component></header-component>
+    <!-- fin elements d'entete du site comprenant le logo et les elements de menu -->
 
+    <main>
+        <!-- contenu du site internet comprenant les differente sections -->
+        <div class="bloc1">
+            <div></div>
+            <div class="bloc-img"></div>
+        </div>
+        <div class="mini-bloc">
+        </div>
+        <h1></h1>
+        <div class="bloc2">
+            <span></span>
+            <div class="sous-bloc1"></div>
+            <div class="sous-bloc2"></div>
+            <div class="sous-bloc3"></div>
+            <div class="sous-bloc4"></div>
+        </div>
+        <div class="bloc3">
+            <div class="direction"></div>
+            <div class="equipe-commerciale"></div>
+        </div>
+        <div class="last-bloc"></div>
+        <!-- fin contenu du site internet comprenant les differente sections -->
+
+    </main>
+   
+    <!-- pieds de page du site internet mettant en avant les informations relatives a la dite societe -->
+    <footer-component></footer-component>
+    <!-- fin pieds de page du site internet mettant en avant les informations relatives a la dite societe -->
+</body>
+<!-- fin Corps du site internet -->
 </html>
