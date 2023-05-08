@@ -6,10 +6,15 @@ headerTemplate.innerHTML = `
 <style>
 
 /* Style the header with a grey background and some padding */
+
 .header {
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
   overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1;
 }
 
 /* Style the header links */
@@ -17,7 +22,7 @@ headerTemplate.innerHTML = `
   float: left;
   color: black;
   text-align: center;
-  padding: 12px;
+  padding: 20px;
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
@@ -29,10 +34,12 @@ headerTemplate.innerHTML = `
     font-family: "latoregular", "sans-serif";
     font-weight: 900;
     font-size: 25px;
+    
 }
 
 /* Change the background color on mouse-over */
 .header a:hover {
+  border-radius: 0;
   background-color: #ddd;
   color: black;
 }

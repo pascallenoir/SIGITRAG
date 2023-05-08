@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <!-- components -->
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
-    <title>Document</title>
+    <title>Sigitrag sarl</title>
 </head>
  <!-- Corps du site internet -->
 <body>
@@ -16,31 +23,246 @@
     <header-component></header-component>
     <!-- fin elements d'entete du site comprenant le logo et les elements de menu -->
 
+    <!-- contenu du site internet comprenant les differente sections -->
     <main>
-        <!-- contenu du site internet comprenant les differente sections -->
-        <div class="bloc1">
-            <div></div>
-            <div class="bloc-img"></div>
-        </div>
-        <div class="mini-bloc">
-        </div>
-        <h1></h1>
-        <div class="bloc2">
-            <span></span>
-            <div class="sous-bloc1"></div>
-            <div class="sous-bloc2"></div>
-            <div class="sous-bloc3"></div>
-            <div class="sous-bloc4"></div>
-        </div>
-        <div class="bloc3">
-            <div class="direction"></div>
-            <div class="equipe-commerciale"></div>
-        </div>
-        <div class="last-bloc"></div>
-        <!-- fin contenu du site internet comprenant les differente sections -->
+    <!-- Slider contenant les informations d'actualités ou resume le plan de la société  -->
+    <div id="sliderDePresentation">
+        <figure>
+            <header class="hero-header" style="background-image: url(img/AdobeStock_333734022.jpeg);">
+                <div class="container">
+                    <div class="intro-text">
+                        <div class="intro-lead-in">Rejoignez Sigitrag</div>
+                        <div class="intro-heading">Sciences Economiques</div>
+                        <a href="#intro" class="btn btn-primary btn-lg">En savoir plus...</a>
+                    </div>
+                </div>
+            </header>
 
+            <header class="hero-header" style="background-image: url(img/AdobeStock_348323502.jpeg);">
+                <div class="container">
+                    <div class="intro-text">
+                        <div class="intro-lead-in">Rejoignez Sigitrag</div>
+                        <div class="intro-heading">Sciences Juridiques</div>
+                    </div>
+                </div>
+            </header>
+
+            <header class="hero-header" style="background-image: url(img/AdobeStock_133640352.jpeg);">
+                <div class="container">
+                    <div class="intro-text">
+                        <div class="intro-lead-in">Rejoignez Sigitrag</div>
+                        <div class="intro-heading">Sciences Politiques</div>
+                    </div>
+                </div>
+            </header>
+
+            <header class="hero-header" style="background-image: url(img/AdobeStock_414018867.jpeg);">
+                <div class="container">
+                    <div class="intro-text">
+                        <div class="intro-lead-in">Rejoignez Sigitrag</div>
+                        <div class="intro-heading">Sciences de Gestion</div>
+                    </div>
+                </div>
+            </header>
+
+            <header class="hero-header" style="background-image: url(img/AdobeStock_333734022.jpeg);">
+                <div class="container">
+                    <div class="intro-text">
+                        <div class="intro-lead-in">Rejoignez Sigitrag</div>
+                        <div class="intro-heading">Sciences Economiques</div>
+                    </div>
+                </div>
+            </header>
+        </figure>
+    </div>
+    <!-- fin Slider contenant les informations d'actualités ou resume le plan de la société  -->
+      
+    <!-- Presentation,historique et citation de la société -->
+    <section>
+        <!-- Titre de la section -->
+        <div class="row">
+            <h1 class="titreSectionCenter">A propos de nous</h1>
+        </div>  
+        <!--fin Titre de la section -->
+        <div class="row">
+            <!-- Content -->
+            <p class="textePresentation">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi blanditiis laudantium distinctio quaerat minus cum, assumenda commodi numquam? Voluptas tempora delectus perferendis accusamus porro cupiditate qui iste mollitia blanditiis in quos nihil perspiciatis temporibus est doloremque ratione sit beatae quasi, quo rem. Beatae, soluta. Molestiae, possimus blanditiis unde velit fugit assumenda earum rem facere facilis sunt aliquam quidem doloribus. Vel facilis repellendus enim alias voluptas aliquam porro dolorum harum natus, atque adipisci earum, dignissimos nam ab doloribus tenetur officia possimus inventore! Harum nulla voluptatibus distinctio, ipsam hic provident ullam suscipit error delectus, quibusdam eum ut quaerat impedit consequatur, similique nemo.
+            </p>
+            <img class="ImagePresentation" src="img/Groupe_de_masques_1.png" alt="image d'illustration">
+        </div>
+        </div>
+    </section>
+    <!--fin Presentation,historique et citation de la société -->
+
+    <!-- Services et categories de service que propose la société -->
+    <section class="AboutSection">
+    </section>
+    <!--fin Services et categories de service que propose la société -->
+
+    <!-- Quelques produits que propose la société -->
+    <section class="AboutSection">
+        
+    </section>
+    <!--fin Quelques produits que propose la société -->
+
+    <!-- Equipe et membres de la société -->
+    <section>
+        <!-- Titre de la section -->
+        <div class="row">
+          <h1 class="titreSectionCenter">Notre Equipe</h1>
+        </div> 
+        <!--fin Titre de la section -->
+        <!-- premiere ligne d'equipe pour les membres de direction -->
+        <div class="row">
+          <!-- Column 1-->
+          <div class="column">
+            <div class="card">
+              <div class="img-container">
+                <img src="img/67823515_2103052043132825_1392946864340336640_n.jpg" />
+              </div>
+              <h3>Patrice Lenoir</h3>
+              <p id="Role">Role</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, corrupti?...</p>
+              <div class="icons">
+                <a class="iconcolor" href="#">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a class="iconcolor" href="#">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a class="iconcolor" href="#">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2-->
+          <div class="column">
+            <div class="card">
+              <div class="img-container">
+                <img src="img/67823515_2103052043132825_1392946864340336640_n.jpg" />
+              </div>
+              <h3>Patrice Lenoir</h3>
+              <p id="Role">Role</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, corrupti?...</p>
+              <div class="icons">
+                <a class="iconcolor" href="#">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a class="iconcolor" href="#">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a class="iconcolor" href="#">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3-->
+          <div class="column">
+            <div class="card">
+              <div class="img-container">
+                <img src="img/67823515_2103052043132825_1392946864340336640_n.jpg" />
+              </div>
+              <h3>Patrice Lenoir</h3>
+              <p id="Role">Role</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, corrupti?...</p>
+              <div class="icons">
+                <a class="iconcolor" href="#">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a class="iconcolor" href="#">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a class="iconcolor" href="#">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--fin premiere ligne d'equipe pour les membres de direction -->
+        <!-- deuxieme ligne d'equipe pour les membres actifs et interagissant directement avec la clientele -->
+        <div class="row">
+            <!-- Column 1-->
+            <div class="column">
+              <div class="card">
+                <div class="img-container">
+                    <img src="img/67823515_2103052043132825_1392946864340336640_n.jpg" />
+                </div> 
+                <h3>Patrice Lenoir</h3>
+                <p id="Role">Role</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, corrupti?...</p>
+                <div class="icons">
+                    <a class="iconcolor" href="#">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                      <a class="iconcolor" href="#">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                      <a class="iconcolor" href="#">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                </div>
+              </div>
+            </div>
+            <!-- Column 2-->                        
+            <div class="column">
+              <div class="card">
+                <div class="img-container">
+                    <img src="img/67823515_2103052043132825_1392946864340336640_n.jpg" />
+                </div>
+                <h3>Patrice Lenoir</h3>
+                <p id="Role">Role</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, corrupti?...</p>
+                <div class="icons">
+                    <a class="iconcolor" href="#">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                      <a class="iconcolor" href="#">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                      <a class="iconcolor" href="#">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                </div>
+              </div>
+            </div>
+            <!-- Column 3-->
+            <div class="column">
+              <div class="card">
+                <div class="img-container">
+                    <img src="img/67823515_2103052043132825_1392946864340336640_n.jpg" />
+                </div>
+                <h3>Patrice Lenoir</h3>
+                <p id="Role">Role</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, corrupti?...</p>
+                <div class="icons">
+                  <a class="iconcolor" href="#">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a class="iconcolor" href="#">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a class="iconcolor" href="#">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--fin deuxieme ligne d'equipe pour les membres actifs et interagissant directement avec la clientele -->
+    </section>
+    <!--fin Equipe et membres de la société  -->
+
+    <!-- Presentation,historique et citation de la société -->
+    <section class="AboutSection">
+    </section>
+    <!--fin Presentation,historique et citation de la société -->
     </main>
-   
+    <!-- fin contenu du site internet comprenant les differente sections -->
+
     <!-- pieds de page du site internet mettant en avant les informations relatives a la dite societe -->
     <footer-component></footer-component>
     <!-- fin pieds de page du site internet mettant en avant les informations relatives a la dite societe -->
