@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'latoregular';
+    src: url('fonts/lato-regular-webfont.woff2') format('woff2'),
+        url('fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latobold';
+    src: url('lato-bold-webfont.woff2') format('woff2'),
+        url('lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'lato_blackregular';
+    src: url('lato-black-webfont.woff2') format('woff2'),
+        url('lato-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* css general */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "latoregular", "sans-serif";
+    font-weight: 300;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+/* css general */
+
+
+/* Scroll Indicator */
+.progress-container{
+  width: 100%;
+  height: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.5);
+  backdrop-filter: blur(0.8rem);
+  z-index: 1;
+}
+#progress{
+ width: 0;
+ height: 100%;
+ background-color: #34EDC2;
+}
+/* fin Scroll Indicator */
+
+/* Navigation */
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem 2rem;
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  background-color: rgba(255,255,255,0.5);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1.5rem 2rem rgba(60,60,200,0.05);
+  z-index: 1;
+}
+nav .fas,
+#logo{
+  font-size: 1.6rem;
+}
+#logo{
+  font-weight: 700;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+nav a{
+  color: var(--clr-black);
+  text-decoration: none;
+  display: block;
+  position: relative;
+  font-size: 1.8rem;
+}
+nav li a:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 50%;
+  bottom: 0;
+  border-bottom: 3px solid #34EDC2;
+  margin-left: -5%;
+  transition: width 0.5s;
+}
+nav li a:hover:before{
+  width: 110%;
+}
+nav i.fas{
+  display: none;
+}
+
+/* Active Hamburger Menu */
+
+nav ul.active{
+  left: 0;
+}
+nav ul.active li a{
+  font-size: 2.5rem;
+}
+/* Navigation */
+
+main {
+    flex: 1 0 auto;
+    margin-top: 50px;
+}
+
+/*elements css pour la section de slide*/
+.hero-header {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: #fff;
+    background-color: #101014;
+    height: 500px;
+}
+
+.hero-header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.hero-header .intro-text .intro-lead-in {
+    font-style: italic;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+.hero-header .intro-text .intro-heading {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+
+.hero-header .video-holder {
+    margin: 25px 0;
+}
+
+.hero-header video {
+    max-width: 700px;
+    width: 100%;
+}
+
+.lead1 {
+
+    font-size: 15px !important;
+}
+
+#sliderDePresentation{
+    overflow: hidden;
+}
+
+#sliderDePresentation figure {
+    position: relative;
+    width:500%;
+    margin: 0;
+    left: 0;
+    animation: 30s slider infinite;
+}
+
+#sliderDePresentation figure header {
+    width:20%;
+    float: left;
+}   
+
+@keyframes slider {
+
+    0% {
+        left:0;
+    }
+
+    20% {
+        left:0;
+    }
+
+    25% {
+        left:-100%;
+    }
+
+    45% {
+        left:-100%;
+    }
+
+    50% {
+        left:-200%;
+    }
+
+    70% {
+        left:-200%;
+    }
+
+    75% {
+        left:-300%;
+    }
+
+    95% {
+        left:-300%;
+    }
+
+    100% {
+        left:-400%;
+    }
+
+    120% {
+        left:-400%;
+    }
+}
+/* fin elements css pour la section de slide*/
+
+/* elements css pour la section About*/
+.sectionAbout{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0em 1em;
+    background-image: url("img/Groupedemasques3.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50%;
+}
+
+.contenupresentationAbout{
+    padding: 2rem 5rem;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    align-items: center;
+}
+h3{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+h4{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.titreEtParagrapheAbout p{
+    text-align: justify;
+    letter-spacing: 0.1rem;
+    color: #101014;
+}
+
+.imgAbout{
+    display: block;
+    width: 100%;
+}
+
+.contenupresentationVision{
+    padding: 1rem 5rem;
+    display: flex;
+    align-items: flex-start;
+    width: 60%;
+}
+
+.contenupresentationcitation{
+    padding: 2rem 5rem;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* fin elements css pour la section About*/
+
+/* elements css pour la section services*/
+.section-services  {
+    padding: 1em 3em;
+  }
+  .columnservices{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  /* fin elements css pour la section service*/
+  
+  

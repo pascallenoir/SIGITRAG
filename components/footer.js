@@ -6,7 +6,7 @@ footerTemplate.innerHTML = `
 body {
     padding: 0;
     margin: 0;
-    min-height: 100vh;
+    height: 100%;
     display: flex;
     align-items: flex-end;
   }
@@ -27,8 +27,8 @@ footer {
   }
   .row.primary {
     display: grid;
-    grid-template-columns: 2fr 2fr 3fr;
-    align-items: stretch;
+    grid-template-columns: 4fr 3fr 3fr;
+    align-items: strech;
   }
   .column {
     width: 100%;
@@ -106,7 +106,23 @@ footer {
     text-align: right;
     color: white;
   }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 992px) {
+    .row.primary {
+      display: grid;
+      grid-template-columns: 4fr 3fr 3fr;
+      align-items: strech;
+    }
+  
+  }
+
+  @media screen and (max-width: 768px) {
+    .row.primary {
+      grid-template-columns: 1fr;
+    }
+  
+  }
+
+  @media screen and (max-width: 576px) {
     .row.primary {
       grid-template-columns: 1fr;
     }
@@ -122,7 +138,8 @@ footer {
         <h1>SIGITRAG</h1>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-            voluptatem corporis error non,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
         </p>
     </div>
 
@@ -134,16 +151,16 @@ footer {
         <h3>A propos de SIGITRAG</h3>
         <ul>
             <li>
-             <a href="#faq">Devenir propriétaire</a>
+              <a href="#faq">Devenir propriétaire</a>
             </li>
             <li>
-             <a href="#cookies-policy">Services</a>
+              <a href="#cookies-policy">Nos Services</a>
             </li>
             <li>
-            <a href="#terms-of-services">Nos valeurs</a>
+              <a href="#terms-of-services">Pourquoi nous choisir ?</a>
             </li>
             <li>
-            <a href="#support">Contact</a>
+              <a href="#support">Nous Contacter</a>
             </li>
         </ul>
     </div>
@@ -154,7 +171,6 @@ footer {
         <i class="fa-brands fa-facebook-square"></i>
         <i class="fa-brands fa-instagram-square"></i>
         <i class="fa-brands fa-twitter-square"></i>
-        <i class="fa-brands fa-youtube-square"></i>
         <i class="fa-brands fa-whatsapp-square"></i>
     </div>
     <p>Copyright &copy; 2023 Bumpy Society</p>
@@ -182,7 +198,7 @@ class Footer extends HTMLElement {
         }
     
         shadowRoot.appendChild(footerTemplate.content);
-      }
+    }
     // fin rappels du cycle de vie pour ajouter l'en-tête à la page
   }
  // fin Class javascripts Footer etendu avec HTMLElement

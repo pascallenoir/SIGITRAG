@@ -5,17 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <script src="components/header.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="querielabo.css" />
     <script src="components/footer.js" type="text/javascript" defer></script>
     <title>Document</title>
 </head>
  <!-- Corps du site internet -->
 <body>
     
-    <!-- elements d'entete du site comprenant le logo et les elements de menu -->
-    <header-component></header-component>
-    <!-- fin elements d'entete du site comprenant le logo et les elements de menu -->
-
+     <!-- Scroll Indicator -->
+     <div class="progress-container">
+        <div id="progress"></div>
+      </div>
+      <!-- fin Scroll Indicator -->
+      <!-- elements d'entete du site comprenant le logo et les elements de menu -->
+      <!-- <header-component></header-component> -->
+      <header>
+        <nav>
+          <a href="index.html" id="logo">SIGITRAG</a>
+          <i class="fas fa-bars" id="ham-menu"></i>
+          <ul id="nav-bar">
+            <li>
+              <a href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+            <li>
+              <a href="produits.html">Produits</a>
+            </li>
+            <li>
+              <a href="contacts.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- fin elements d'entete du site comprenant le logo et les elements de menu -->
+     
     <main>
         <!-- contenu du site internet comprenant les differente sections -->
      
@@ -26,6 +51,9 @@
     <!-- pieds de page du site internet mettant en avant les informations relatives a la dite societe -->
     <footer-component></footer-component>
     <!-- fin pieds de page du site internet mettant en avant les informations relatives a la dite societe -->
+   <!-- Script -->
+   <script src="script.js"></script>
+   <!-- Script -->
 </body>
 <!-- fin Corps du site internet -->
 </html>

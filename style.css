@@ -1,36 +1,134 @@
 @font-face {
-    font-family: 'latoregular';
-    src: url('fonts/lato-regular-webfont.woff2') format('woff2'),
-        url('fonts/lato-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'latoregular';
+  src: url('fonts/lato_regular/lato-regular-webfont.woff2') format('woff2'),
+      url('fonts/lato_regular/lato-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latobold';
+  src: url('fonts/lato_bold/lato-bold-webfont.woff2') format('woff2'),
+       url('fonts/lato_bold/lato-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
 }
+@font-face {
+  font-family: 'lato_blackregular';
+  src: url('fonts/lato_black/lato-black-webfont.woff2') format('woff2'),
+       url('fonts/lato_black/lato-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+html{
+  font-size: 75%;
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: "latoregular", "sans-serif";
+    font-family: "latoregular", "sans-serif"; 
     font-weight: 300;
     font-size: 20px;
     display: flex;
     flex-direction: column;
 }
 
+/* Scroll Indicator */
+.progress-container{
+  width: 100%;
+  height: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.5);
+  backdrop-filter: blur(0.8rem);
+  z-index: 1;
+}
+#progress{
+ width: 0;
+ height: 100%;
+ background-color: #34EDC2;
+}
+/* fin Scroll Indicator */
+
+/* Navigation */
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  background-color: rgba(255,255,255,0.5);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1.5rem 2rem rgba(60,60,200,0.05);
+  z-index: 1;
+}
+nav .fas{
+  font-size: 1.6rem;
+}
+#logo{
+  font-family: "lato_blackregular", "sans-serif";
+  font-weight: 900;
+  font-size: 2rem;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+nav a{
+  color: #101014;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  font-size: 1.8rem;
+  font-family: "latoregular", "sans-serif";
+  font-weight: 400;
+}
+nav li a:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 50%;
+  bottom: 0;
+  border-bottom: 3px solid #34EDC2;
+  margin-left: -5%;
+  transition: width 0.5s;
+}
+nav li a:hover:before{
+  width: 110%;
+}
+nav i.fas{
+  display: none;
+}
+
+/* Active Hamburger Menu */
+
+nav ul.active{
+  left: 0;
+}
+nav ul.active li a{
+  font-size: 2.5rem;
+}
+/* Navigation */
 
 main {
     flex: 1 0 auto;
-    margin-top: 60px;
-  }
+    margin-top: 85px;
+}
 
-
-
-  /* Hero Header */
-
+/*elements css pour la section de slide*/
 .hero-header {
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -39,29 +137,54 @@ main {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    text-align: center;
+    text-align: left;
     color: #fff;
+    text-shadow: 2px 2px 8px #101014;
     background-color: #101014;
-    height: 500px;
+    height: 450px;
+    display: flex;
+    align-items: flex-end;
 }
 
-.hero-header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
+.hero-header .container {
+  width: 100%;
+  padding: 1em;
+  background-color: rgba(0,0,0,0.5);
+} 
+/* .hero-header .intro-text {
+    /* padding-top: 100px;
+    margin-left: 5%;
+    padding-bottom: 100px; 
+} */
 
 .hero-header .intro-text .intro-lead-in {
-    font-style: italic;
-    font-size: 22px;
-    line-height: 22px;
-    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 5px;
 }
 
 .hero-header .intro-text .intro-heading {
     font-weight: bold;
-    font-size: 50px;
-    line-height: 50px;
-    margin-bottom: 25px;
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+
+/* bouton d'action du slide */
+.btn-primary{
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+.btn-primary{
+    background-color: #101014;
+    color: #FFF;
+    font-size: 15px;
+}
+.btn-primary:hover{
+    background-color: #34EDC2;
 }
 
 .hero-header .video-holder {
@@ -72,8 +195,6 @@ main {
     max-width: 700px;
     width: 100%;
 }
-
-/*-------------------------------------------------------------- POUR LES MODIFICATION ------------------------------------------------------------*/
 
 .lead1 {
 
@@ -139,75 +260,198 @@ main {
         left:-400%;
     }
 }
+/* fin elements css pour la section de slide*/
 
-/* .contenuAboutDiv{
-    display: -webkit-flex;
+
+/*elements css pour la section A propos*/
+.section-about{
   display: flex;
-    
+  flex-wrap: wrap;
+  padding: 1em 1em 0em 1em;
+  background-image: url("img/Groupedemasques3.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 40%;
+  background-color: #FFF;
 }
 
-.textePresentation{
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    width: 60%;
+.contenupresentationAbout{
+  padding: 2rem 5rem;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+h3{
+  font-family: "lato_blackregular", "sans-serif";
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: 2rem;
 }
 
-.ImagePresentation{
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    background-color: green;
-    width: 40%;
-    
-} */
+h4{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.titreEtParagrapheAbout p{
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  color: #101014;
+}
 
-.row {
+.imgAbout{
+  display: block;
+  max-width: 100%;
+}
+
+.contenupresentationVision{
+  padding: 1rem 5rem;
+  display: flex;
+  align-items: flex-start;
+  width: 60%;
+}
+
+.contenupresentationcitation{
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+/* fin elements css pour la section A propos*/
+
+/* elements css pour la section services*/
+.section-services  {
+  padding: 1em 3em;
+  background-color: #FFA55F;
+}
+.titreSectionCenterservices {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  color: #FFF;
+}
+.rowservices {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 1em;
+}
+.columnservices{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  text-align: center;
+}
+.cardservices {
+  width: 100%;
+  height: 100%;
+  padding: 2em 1.5em;
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.h3services {
+  font-size: 20px;
+  font-weight: 600;
+  color: #101014;
+  margin: 1em 0;
+}
+.pservices {
+  color: #FFF;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.icon-wrapperservices {
+  background-color: #101014;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+.cardservices:hover {
+  background-position: 0 100%;
+}
+.cardservices:hover .icon-wrapperservices {
+  background-color: #ffffff;
+  color: #101014;
+}
+.cardservices:hover .h3services {
+  color: #ffffff;
+}
+.cardservices:hover .pservices {
+  color: #f0f0f0;
+}
+/* fin elements css pour la section service*/
+
+
+/*elements css pour la section equipe*/
+.section-equipe {
+  padding: 1em 3em;
+}
+.cardequipe {
+  padding: 5em 1em;
+}
+.columnequipe {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 1em 1em;
+}
+.rowequipe {
   display: flex;
   flex-wrap: wrap;
   padding: 1em 1em;
   text-align: center;
 }
 
-.column {
-  width: 100%;
-  padding: 0.5em 0;
-}
-
-
-
 .titreSectionCenter {
   width: 100%;
   text-align: center;
-  font-size: 3.5em;
+  font-size: 4rem;
+  margin-bottom: 2rem;
   color: #101014;
+}
+
+.titreSectionCenterwhite {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #FFF;
 }
 
 .titreSectionLeft {
   width: 100%;
   text-align: left;
-  font-size: 3.5em;
+  font-size: 4rem;
+  margin-bottom: 2rem;
   color: #101014;
 }
 
 .titreSectionRight {
     width: 100%;
     text-align: right;
-    font-size: 3.5em;
+    font-size: 4rem;
+    margin-bottom: 2rem;
     color: #101014;
 }
 
-.card {
+.cardequipe {
   box-shadow: 0 0 2em rgba(25, 0, 58, 0.1);
   border-radius: 0.6em;
-  padding: 2.5em 1em;
+  padding: 1.5em 1em;
   cursor: pointer;
   color: #101014;
   transition: 1s;
   background-color: #ffffff;
 }
 
-.card .img-container {
+.cardequipe .img-containerequipe {
   width: 8em;
   height: 8em;
   background-color: #34EDC2;
@@ -216,32 +460,25 @@ main {
   margin: 0 auto 2em auto;
 }
 
-.card img {
+
+.cardequipe img {
   width: 100%;
   border-radius: 50%;
 }
 
-.card h3 {
+.cardequipe #h3equipe {
+  font-size: 1em;
   font-weight: 600;
 }
 
-.card p {
-    font-weight: 100;
+.cardequipe p {
+    font-weight: 400;
     margin: 0em 0 2.5em 0;
-    text-align: justify;
     color: #808080;
+    letter-spacing: 2px;
 }
-
-#Role
-{
-  font-weight: 400;
-  margin: 0.5em 0 0.5em 0;
-  letter-spacing: 2px;
-  text-align: center;
-  color: #101014;
-}
-  
-.icons {
+ 
+.iconsequipe {
   width: 50%;
   min-width: 180px;
   margin: auto;
@@ -249,63 +486,130 @@ main {
   justify-content: space-between;
 }
 
-.card a {
+.cardequipe a {
   text-decoration: none;
   color: inherit;
   font-size: 1.4em;
 }
 
-.card:hover {
+.cardequipe:hover {
   background: linear-gradient(#2BC29F, #33E8BE);
-  padding: 3.5em 1em;
+  padding: 2em 1em;
   color: #ffffff;
 }
 
-.card:hover .img-container {
-  transform: scale(1.20);
+.cardequipe:hover .img-containerequipe {
+  transform: scale(1.15);
 }
 
-.card:hover p{
+.cardequipe:hover p{
     color: #ffffff;
 }
 
-.iconcolor:hover {
+.iconcolorequipe:hover {
    color: #101014;
 }
+/* fin elements css pour la section equipe*/
 
-
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-/* 320px (points de vue de téléphone plus petits)*/
-@media screen and  (min-width: 320px ) { 
-
+/* elements css pour la section qualité*/
+.section-qualite  {
+  padding: 1em 3em;
+  background-color: #f8f9fb;
+}
+.rowqualite {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.columnqualite {
+  flex: 0 50%;
+  max-width: 0 50%;
+  padding: 1em 1em;
 }
 
-/* 480 pixels (petits appareils et la plupart des téléphones) */
-@media screen and  (min-width: 480px) {
-
+.cardqualite {
+  padding: 5em 1em;
+  box-shadow: 0 0 2em rgba(25, 0, 58, 0.1);
+  border-radius: 0.6em;
+  padding: 1.5em 1em;
+  color: #101014;
+  background-color: #ffffff;
 }
 
-/* 768 pixels (la plupart des tablettes)*/
-@media screen and (min-width: 768px) {
-    section {
-      padding: 1em 7em;
-    }
-  }
-
-/* 992px (points de vue de bureau plus petits) */
-@media screen and (min-width: 992px) {
-  section {
-    padding: 1em;
-  }
-  .card {
-    padding: 5em 1em;
-  }
-  .column {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    padding: 0 1em;
-  }
+.pqualite{
+  text-align: justify;
 }
+
+.cardqualite h5{
+  text-align: left;
+}
+
+.columnwhy{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.cardvaleurentreprise{
+  flex: 100%;
+  max-width: 100%;
+  padding: 0.5em;
+  height: 20vh;
+}
+.cardvaleurentrepriserow {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-gap: 10px;
+  align-items: stretch;
+}
+
+.columnvaleurentreprise{
+  padding: 1em 1em;
+}
+
+.columnvaleurentreprise p{
+  color: #101014;
+  font-size: 15px;
+}
+
+.icon-valeurentreprise {
+  background-color: #101014;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 1.5em;
+  width: 1.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+/* elements css pour la section qualité*/
+
+/*
+    Back To Top Button
+*/
+#scroll-top-btn{
+  place-items: center;
+  height: 4rem;
+  width: 4rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  background-color: #34EDC2;
+  border: none;
+  outline: none;
+  border: 0.4rem solid #FFF;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.12);
+  display: none;
+}
+#scroll-top-btn .fas{
+  color: #FFF;
+  font-size: 2rem;
+  line-height: 0;
+}
+/*
+    Back To Top Button
+*/
 
