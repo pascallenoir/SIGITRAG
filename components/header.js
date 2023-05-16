@@ -66,8 +66,8 @@ headerTemplate.innerHTML = `
     <div class="header-right">
         <a class="active" href="#index">Accueil</a>
         <a href="#services">Nos Services</a>
-        <a href="#produits">Nos Produits</a>
-        <a href="#contacts">Contact</a>
+        <a href="produits.html">Nos Produits</a>
+        <a href="contacts.html">Contact</a>
     </div>
 </div>
 `;
@@ -75,21 +75,21 @@ headerTemplate.innerHTML = `
 
 // Class javascripts Header etendu avec HTMLElement
 class Header extends HTMLElement {
-    // méthode de constructor et le mot-clé spécial super
-    constructor() {
-      super();
-    }
-    // Fin méthode de constructor et le mot-clé spécial super
-
-    // rappels du cycle de vie pour ajouter l'en-tête à la page
-    // connectedCallbacks'exécute chaque fois que votre élément personnalisé est inséré dans le DOM.
-    connectedCallback() {
-        const shadowRoot = this.attachShadow({ mode: 'closed' });
-    
-        shadowRoot.appendChild(headerTemplate.content);
-      }
-    // fin rappels du cycle de vie pour ajouter l'en-tête à la page
+  // méthode de constructor et le mot-clé spécial super
+  constructor() {
+    super();
   }
+  // Fin méthode de constructor et le mot-clé spécial super
+
+  // rappels du cycle de vie pour ajouter l'en-tête à la page
+  // connectedCallbacks'exécute chaque fois que votre élément personnalisé est inséré dans le DOM.
+  connectedCallback() {
+    const shadowRoot = this.attachShadow({ mode: 'closed' });
+
+    shadowRoot.appendChild(headerTemplate.content);
+  }
+  // fin rappels du cycle de vie pour ajouter l'en-tête à la page
+}
 // fin Class javascripts Header etendu avec HTMLElement
 
 // Enregistrement de l'élément personnalisé avec la méthode customElements.define()

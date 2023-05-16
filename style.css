@@ -13,11 +13,11 @@
     box-sizing: border-box;
 }
 
-html,
+/*html,
 body {
-  height: 100%;
+    height: 100%;
 }
-
+*/
 body {
     font-family: "latoregular", "sans-serif";
     font-weight: 300;
@@ -28,19 +28,262 @@ body {
 
 main {
     flex: 1 0 auto;
-  }
+}
 
+.bloc-principal {
+    height: 100vh;
+    /*background-color: yellowgreen;*/
+    padding-top: 30px;
+}
+
+/* l'Onglet contact*/
+.bloc-contact {
+    height: 600px;
+    width: 700px;
+    margin-top: 50px;
+    margin: 0px auto;
+    padding-top: 25px;
+    border-radius: .8em;
+    box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
+
+}
+
+.bloc-contact h2 {
+    text-align: center;
+
+}
+
+
+form {
+    width: 650px;
+    padding: 20px;
+    height: 350px;
+
+    margin: 10px auto;
+
+}
+
+.input-email,
+.input-message,
+.input-objet {
+    display: flex;
+    padding-bottom: 20px;
+
+
+}
+
+input,
+textarea {
+    padding: 5px;
+    flex-basis: 100%;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+textarea {
+    font-size: 20px;
+    font-family: "latoregular", "sans-serif";
+
+}
+
+input {
+    height: 43px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.input-message {
+    height: 160px;
+}
+
+form button {
+    padding: 5px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    position: relative;
+    left: 82%;
+    top: -5px;
+    background-color: black;
+    color: #fff;
+
+
+}
+
+.span-bloc-contact {
+    position: relative;
+    left: 48%;
+    font-size: 25px;
+}
+
+.les_sprites {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.spte_gmail,
+.spte_facebook,
+.spte_insta {
+    margin-right: 15px;
+}
+
+/*
+input,
+textarea {
+    position: absolute;
+    left: px;
+}
+
+input[type="email"] {
+    width: 445px;
+    height: 40px;
+    margin-bottom: 55px;
+}
+
+input[type="text"] {
+    width: 30px;
+}
+/*
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
 /* 992px (points de vue de bureau plus petits) */
-@media (min-width: 992px) {}
+@media (max-width: 992px) {}
 
 /* 768 pixels (la plupart des tablettes)*/
-@media (min-width: 768px) { }
+@media (max-width: 768px) {
+    .bloc-contact {
+
+        width: 100%;
+        margin-top: 50px;
+        margin: 0px auto;
+        background-color: dimgray;
+        padding-top: 25px;
+    }
+
+    form {
+        width: 100%;
+        padding: 20px;
+        height: 360px;
+        background-color: brown;
+        /*margin: 10px auto;*/
+
+    }
+
+    .les_sprites {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    form button {
+        padding: 5px 30px;
+        cursor: pointer;
+        border-radius: 3px;
+        border: none;
+        font-size: 20px;
+        position: relative;
+        left: 0%;
+        top: -5px;
+        width: 100%;
+        height: 40px;
+
+
+    }
+}
 
 /* 480 pixels (petits appareils et la plupart des téléphones) */
-@media (min-width: 480px) { }
+@media (max-width: 576px) {
+    .bloc-contact {
+
+        width: 100%;
+        margin-top: 50px;
+        margin: 0px auto;
+        background-color: dimgray;
+        padding-top: 25px;
+    }
+
+    form {
+        width: 100%;
+        padding: 20px;
+        height: 360px;
+        background-color: brown;
+        /*margin: 10px auto;*/
+
+    }
+
+
+    .bloc-contact h2 {
+        margin-bottom: 10px;
+    }
+
+    form button {
+        padding: 5px 30px;
+        cursor: pointer;
+        border-radius: 3px;
+        border: none;
+        font-size: 20px;
+        position: relative;
+        left: 0%;
+        top: -5px;
+        width: 100%;
+        height: 40px;
+
+    }
+
+    .les_sprites {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+}
 
 /* 320px (points de vue de téléphone plus petits)*/
-@media (min-width: 320px ) { }
+@media (max-width: 320px) {
+    form {
+        width: 100%;
+
+        height: 360px;
+        background-color: brown;
+        margin: 10px auto;
+
+    }
+
+    .bloc-contact {
+        height: 100%;
+        width: 100%;
+        /*margin-top: 50px;
+        margin: 0px auto;
+        background-color: dimgray;
+        padding-top: 25px; */
+    }
+
+    form button {
+        padding: 5px 30px;
+        cursor: pointer;
+        border-radius: 3px;
+        border: none;
+        font-size: 20px;
+        position: relative;
+        left: 0%;
+        top: -5px;
+        width: 100%;
+        height: 40px;
+
+    }
+
+    .les_sprites {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .spte_gmail,
+    .spte_facebook,
+    .spte_insta {
+        margin-right: 15px;
+    }
+}
