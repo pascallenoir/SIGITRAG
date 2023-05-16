@@ -168,10 +168,10 @@ footer {
 
 <div class="row copyright">
     <div class="social">
-        <i class="fa-brands fa-facebook-square"></i>
-        <i class="fa-brands fa-instagram-square"></i>
-        <i class="fa-brands fa-twitter-square"></i>
-        <i class="fa-brands fa-whatsapp-square"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-whatsapp"></i>
     </div>
     <p>Copyright &copy; 2023 Bumpy Society</p>
 </div>
