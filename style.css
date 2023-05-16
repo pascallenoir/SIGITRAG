@@ -613,3 +613,103 @@ h4{
     Back To Top Button
 */
 
+/*
+   page contacte
+*/
+.bloc-principal {
+  margin:2em;
+}
+
+/* l'Onglet contact*/
+.bloc-contact {
+  height: 600px;
+  width: 700px;
+  margin-top: 50px;
+  margin: 0px auto;
+  padding-top: 25px;
+  border-radius: .8em;
+  box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
+
+}
+
+.bloc-contact h2 {
+  text-align: center;
+
+}
+
+form {
+  width: 650px;
+  padding: 20px;
+  height: 350px;
+
+  margin: 10px auto;
+
+}
+
+.input-email,
+.input-message,
+.input-objet {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+input,
+textarea {
+  padding: 5px;
+  flex-basis: 100%;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+textarea {
+  font-size: 20px;
+  font-family: "latoregular", "sans-serif";
+
+}
+
+input {
+  height: 43px;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.input-message {
+  height: 160px;
+}
+
+form button {
+  padding: 5px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  position: relative;
+  left: 82%;
+  top: -5px;
+  background-color: black;
+  color: #fff;
+
+
+}
+
+.span-bloc-contact {
+  position: relative;
+  left: 48%;
+  font-size: 25px;
+}
+
+.les_sprites {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.spte_gmail,
+.spte_facebook,
+.spte_insta {
+  margin-right: 15px;
+}
+/*
+   page contacte
+*/

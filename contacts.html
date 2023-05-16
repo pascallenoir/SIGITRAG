@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="querielabo.css" />
+    <!-- components -->
     <script src="components/footer.js" type="text/javascript" defer></script>
-    <title>Document</title>
+    <title>Sigitrag sarl</title>
 </head>
  <!-- Corps du site internet -->
 <body>
@@ -41,15 +48,56 @@
      
     <main>
         <!-- contenu du site internet comprenant les differente sections -->
-     
-        <!-- fin contenu du site internet comprenant les differente sections -->
+    <div class="bloc-principal">
+      <div class="bloc-contact">
+          <h2>Envoyer nous un mail</h2>
+          <!--<form action=""></form>-->
+          <form method="POST" action="EnvoiMail.php">
+              <div class="input-email">
+                  <input type="email" id="email" name="email" placeholder="Entrer votre email" /><br>
+              </div>
+              <div class="input-objet">
+                  <input type="text" id="objet" name="objet" placeholder="Objet du mail" /><br>
+              </div>
+              <div class="input-message">
+                  <textarea id="message" name="message" placeholder="Entrer votre message ......"></textarea><br>
+              </div>
+
+              <button>Valider</button>
+
+
+          </form>
+          <span class="span-bloc-contact">ou</span>
+          <div class="les_sprites">
+              <div class="spte_facebook">
+                  <a href="#"><img src="icons/facebook-small.png" alt="logo de Facebook"></a>
+              </div>
+              <div class="spte_gmail">
+                  <a href="#"><img src="icons/gmail-small.png" alt="logo de Gmail"></a>
+              </div>
+              <div class="spte_insta">
+                  <a href="#"><img src="icons/instagram-small.png" alt="logo d'instagram"></a>
+              </div>
+              <div class="spte_linkedin">
+                  <a href="#"><img src="icons/linkedin-small.png" alt="logo de Linkedin"></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- fin contenu du site internet comprenant les differente sections -->
+
 
     </main>
    
     <!-- pieds de page du site internet mettant en avant les informations relatives a la dite societe -->
     <footer-component></footer-component>
     <!-- fin pieds de page du site internet mettant en avant les informations relatives a la dite societe -->
-   <!-- Script -->
+    <!-- Scroll To Top Button -->
+    <button id="scroll-top-btn">
+		  <i class="fas fa-arrow-up"></i>
+	  </button>
+    <!-- Script -->
+
    <script src="script.js"></script>
    <!-- Script -->
 </body>

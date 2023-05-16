@@ -175,7 +175,45 @@ nav ul li a:before{
   padding: 1em 1em;
 }
 /*elements css pour la section qualité*/
+
+/*
+   page contacte
+*/
+.bloc-contact {
+
+  width: 100%;
+  margin-top: 50px;
+  margin: 0px auto;
+  padding-top: 25px;
 }
+
+form {
+  width: 100%;
+  padding: 20px;
+  height: 360px;
+}
+
+.les_sprites {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+form button {
+  padding: 5px 30px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  font-size: 20px;
+  position: relative;
+  left: 0%;
+  top: -5px;
+  width: 100%;
+  height: 40px;
+}
+/*
+   page contacte
+*/
 
 /* Extra Small Devices: Potrait Phones*/
 @media only screen and (max-width: 576px) { 
@@ -195,6 +233,100 @@ nav ul{
   padding: 1em 1em;
 }
 /*elements css pour la section qualité*/
+
+/*
+   page contacte
+*/
+.bloc-contact {
+
+  width: 100%;
+  margin-top: 50px;
+  margin: 0px auto;
+  padding-top: 25px;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+  height: 360px;
+}
+
+
+.bloc-contact h2 {
+  margin-bottom: 10px;
+}
+
+form button {
+  padding: 5px 30px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  font-size: 20px;
+  position: relative;
+  left: 0%;
+  top: -5px;
+  width: 100%;
+  height: 40px;
+
+}
+
+.les_sprites {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+/*
+   page contacte
+*/
+}
+
+/* 320px (points de vue de téléphone plus petits)*/
+@media (max-width: 320px) {
+
+  /*
+   page contacte
+*/
+  form {
+      width: 100%;
+
+      height: 360px;
+      margin: 10px auto;
+
+  }
+
+  .bloc-contact {
+      height: 100%;
+      width: 100%;
+  }
+
+  form button {
+      padding: 5px 30px;
+      cursor: pointer;
+      border-radius: 3px;
+      border: none;
+      font-size: 20px;
+      position: relative;
+      left: 0%;
+      top: -5px;
+      width: 100%;
+      height: 40px;
+
+  }
+
+  .les_sprites {
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+  }
+
+  .spte_gmail,
+  .spte_facebook,
+  .spte_insta {
+      margin-right: 15px;
+  }
+  /*
+   page contacte
+*/
 }
 
 
