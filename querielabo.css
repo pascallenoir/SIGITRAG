@@ -1,0 +1,201 @@
+/* Medium Devices: Tablets */
+@media only screen and (max-width: 992px) {
+/* body{
+    background-color: orange;
+}    */
+html {
+	font-size: 56.25%
+}
+
+main {
+  margin-top: 65px;
+}
+
+
+/* Navigation */
+#logo,
+nav a{
+    font-size: 2rem;
+}
+/* Navigation */
+
+/* elements css pour la section A propos*/
+.section-about{
+  background-size: 30%;
+}
+
+.contenupresentationAbout{
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.contenupresentationVision{
+  padding: 1rem 5rem;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.imgAbout{
+  display: block;
+  max-width: 50%;
+  height: auto;
+}
+/* fin elements css pour la section A propos*/
+
+/* elements css pour la section service*/
+.section-services {
+  padding: 1em 2em;
+}
+.columnservices {
+  flex: 0 50%;
+  max-width: 50%;
+}
+/* fin elements css pour la section service*/
+
+/*elements css pour la section equipe*/
+.section-equipe {
+  padding: 1em 2em;
+}
+.columnequipe {
+  flex: 0 50%;
+  max-width: 50%;
+}
+/*elements css pour la section equipe*/
+
+/*elements css pour la section qualité*/
+.section-equipe {
+  padding: 1em 1em;
+}
+/*elements css pour la section qualité*/
+
+}
+
+/* Small Devices: Landscape phones */
+@media only screen and (max-width: 768px) {
+/* body{
+    background-color: green;
+ }   */
+html {
+	font-size: 56.25%;
+}
+
+main {
+  margin-top: 60px;
+}
+
+/* Navigation */
+nav .fas,
+#logo{
+    font-size: 2.2rem;
+}
+nav i.fas{
+    display: block;
+   
+}
+nav ul{
+    height: calc(100vh - 40.15px);
+    width: 50vw;
+    position: fixed;
+    top: 40.15px;
+    left: -50vw;
+    display: flex;
+    flex-direction: column;
+    align-items:  flex-start;
+    padding: 1em;
+    background: #fff;
+    justify-content: flex-start;
+    transition: 1s;
+}
+nav ul li a:before{
+    background-color: var(--clr-white);
+}
+/* Navigation */
+
+/*elements css pour la section de slide*/
+.hero-header {
+  height: 300px;
+}
+/*elements css pour la section de slide*/
+
+/*elements css pour la section A propos*/
+.section-about{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0em 1em;
+  background-image: none;
+}
+/*elements css pour la section A propos*/
+
+/* elements css pour la section service*/
+.section-services {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.rowservices {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 1em;
+}
+.columnservices {
+  flex: none;
+  max-width: none;
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+/* fin elements css pour la section service*/
+
+/*elements css pour la section equipe*/
+.section-equipe  {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.columnequipe {
+  flex: none;
+  max-width: none;
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+/*elements css pour la section equipe*/
+
+/*elements css pour la section qualité*/
+.section-qualite  {
+  padding: 1em 2em;
+}
+.columnqualite {
+  flex: 100%;
+  padding: 1em 1em;
+}
+/*elements css pour la section qualité*/
+}
+
+/* Extra Small Devices: Potrait Phones*/
+@media only screen and (max-width: 576px) { 
+html {
+	font-size: 50%;
+}
+
+/* Navigation */
+nav ul{
+  height: calc(100vh - 35.93px);
+  top: 35.93px
+}
+/* Navigation */
+
+/*elements css pour la section qualité*/
+.section-qualite  {
+  padding: 1em 1em;
+}
+/*elements css pour la section qualité*/
+}
+
+
+
