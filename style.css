@@ -11,7 +11,6 @@
        url('fonts/lato_bold/lato-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 @font-face {
   font-family: 'lato_blackregular';
@@ -19,8 +18,15 @@
        url('fonts/lato_black/lato-black-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
+
+:root {
+  --star-size: 25px;
+  --star-color: rgba(0,0,0,0.20);
+  --star-background: #000;
+  --star-backgroundcard: #fc0;
+}
+
 * {
     padding: 0;
     margin: 0;
