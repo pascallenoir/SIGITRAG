@@ -1,71 +1,75 @@
 @font-face {
   font-family: 'latoregular';
   src: url('fonts/lato_regular/lato-regular-webfont.woff2') format('woff2'),
-      url('fonts/lato_regular/lato-regular-webfont.woff') format('woff');
+    url('fonts/lato_regular/lato-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'latobold';
   src: url('fonts/lato_bold/lato-bold-webfont.woff2') format('woff2'),
-       url('fonts/lato_bold/lato-bold-webfont.woff') format('woff');
+    url('fonts/lato_bold/lato-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'lato_blackregular';
   src: url('fonts/lato_black/lato-black-webfont.woff2') format('woff2'),
-       url('fonts/lato_black/lato-black-webfont.woff') format('woff');
+    url('fonts/lato_black/lato-black-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
   --star-size: 25px;
-  --star-color: rgba(0,0,0,0.20);
+  --star-color: rgba(0, 0, 0, 0.20);
   --star-background: #000;
   --star-backgroundcard: #fc0;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 75%;
   scroll-behavior: smooth;
 }
 
 body {
-    font-family: "latoregular", "sans-serif"; 
-    font-weight: 300;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
+  font-family: "latoregular", "sans-serif";
+  font-weight: 300;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Scroll Indicator */
-.progress-container{
+.progress-container {
   width: 100%;
   height: 1rem;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(0.8rem);
   z-index: 1;
 }
-#progress{
- width: 0;
- height: 100%;
- background-color: #34EDC2;
+
+#progress {
+  width: 0;
+  height: 100%;
+  background-color: #34EDC2;
 }
+
 /* fin Scroll Indicator */
 
 /* Navigation */
-nav{
+nav {
   width: 100%;
   display: flex;
   align-items: center;
@@ -74,26 +78,30 @@ nav{
   position: fixed;
   top: 1rem;
   left: 0;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
-  box-shadow: 0 1.5rem 2rem rgba(60,60,200,0.05);
+  box-shadow: 0 1.5rem 2rem rgba(60, 60, 200, 0.05);
   z-index: 1;
 }
-nav .fas{
+
+nav .fas {
   font-size: 1.6rem;
 }
-#logo{
+
+#logo {
   font-family: "lato_blackregular", "sans-serif";
   font-weight: 900;
   font-size: 2rem;
 }
-nav ul{
+
+nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   gap: 2rem;
 }
-nav a{
+
+nav a {
   color: #101014;
   text-decoration: none;
   display: block;
@@ -102,7 +110,8 @@ nav a{
   font-family: "latoregular", "sans-serif";
   font-weight: 400;
 }
-nav li a:before{
+
+nav li a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -112,51 +121,56 @@ nav li a:before{
   margin-left: -5%;
   transition: width 0.5s;
 }
-nav li a:hover:before{
+
+nav li a:hover:before {
   width: 110%;
 }
-nav i.fas{
+
+nav i.fas {
   display: none;
 }
 
 /* Active Hamburger Menu */
 
-nav ul.active{
+nav ul.active {
   left: 0;
 }
-nav ul.active li a{
+
+nav ul.active li a {
   font-size: 2.5rem;
 }
+
 /* Navigation */
 
 main {
-    flex: 1 0 auto;
-    margin-top: 85px;
+  flex: 1 0 auto;
+  margin-top: 85px;
 }
 
 /*elements css pour la section de slide*/
 .hero-header {
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    text-align: left;
-    color: #fff;
-    text-shadow: 2px 2px 8px #101014;
-    background-color: #101014;
-    height: 450px;
-    display: flex;
-    align-items: flex-end;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: left;
+  color: #fff;
+  text-shadow: 2px 2px 8px #101014;
+  background-color: #101014;
+  height: 450px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .hero-header .container {
   width: 100%;
   padding: 1em;
-  background-color: rgba(0,0,0,0.5);
-} 
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* .hero-header .intro-text {
     /* padding-top: 100px;
     margin-left: 5%;
@@ -164,113 +178,116 @@ main {
 } */
 
 .hero-header .intro-text .intro-lead-in {
-    font-size: 20px;
-    line-height: 20px;
-    margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 5px;
 }
 
 .hero-header .intro-text .intro-heading {
-    font-weight: bold;
-    font-size: 35px;
-    line-height: 35px;
-    margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 35px;
+  margin-bottom: 10px;
 }
 
 /* bouton d'action du slide */
-.btn-primary{
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    border: none;
-    outline: none;
-    transition: 0.5s;
+.btn-primary {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  transition: 0.5s;
 }
-.btn-primary{
-    background-color: #101014;
-    color: #FFF;
-    font-size: 15px;
+
+.btn-primary {
+  background-color: #101014;
+  color: #FFF;
+  font-size: 15px;
 }
-.btn-primary:hover{
-    background-color: #34EDC2;
+
+.btn-primary:hover {
+  background-color: #34EDC2;
 }
 
 .hero-header .video-holder {
-    margin: 25px 0;
+  margin: 25px 0;
 }
 
 .hero-header video {
-    max-width: 700px;
-    width: 100%;
+  max-width: 700px;
+  width: 100%;
 }
 
 .lead1 {
 
-    font-size: 15px !important;
+  font-size: 15px !important;
 }
 
-#sliderDePresentation{
-    overflow: hidden;
+#sliderDePresentation {
+  overflow: hidden;
 }
 
 #sliderDePresentation figure {
-    position: relative;
-    width:500%;
-    margin: 0;
-    left: 0;
-    animation: 30s slider infinite;
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 30s slider infinite;
 }
 
 #sliderDePresentation figure header {
-    width:20%;
-    float: left;
-}   
+  width: 20%;
+  float: left;
+}
 
 @keyframes slider {
 
-    0% {
-        left:0;
-    }
+  0% {
+    left: 0;
+  }
 
-    20% {
-        left:0;
-    }
+  20% {
+    left: 0;
+  }
 
-    25% {
-        left:-100%;
-    }
+  25% {
+    left: -100%;
+  }
 
-    45% {
-        left:-100%;
-    }
+  45% {
+    left: -100%;
+  }
 
-    50% {
-        left:-200%;
-    }
+  50% {
+    left: -200%;
+  }
 
-    70% {
-        left:-200%;
-    }
+  70% {
+    left: -200%;
+  }
 
-    75% {
-        left:-300%;
-    }
+  75% {
+    left: -300%;
+  }
 
-    95% {
-        left:-300%;
-    }
+  95% {
+    left: -300%;
+  }
 
-    100% {
-        left:-400%;
-    }
+  100% {
+    left: -400%;
+  }
 
-    120% {
-        left:-400%;
-    }
+  120% {
+    left: -400%;
+  }
 }
+
 /* fin elements css pour la section de slide*/
 
 
 /*elements css pour la section A propos*/
-.section-about{
+.section-about {
   display: flex;
   flex-wrap: wrap;
   padding: 1em 1em 0em 1em;
@@ -281,71 +298,78 @@ main {
   background-color: #FFF;
 }
 
-.contenupresentationAbout{
+.contenupresentationAbout {
   padding: 2rem 5rem;
   display: grid;
   grid-template-columns: 6fr 4fr;
   grid-gap: 20px;
   align-items: center;
 }
-h3{
+
+h3 {
   font-family: "lato_blackregular", "sans-serif";
   font-weight: 900;
   font-size: 4rem;
   margin-bottom: 2rem;
 }
 
-h4{
+h4 {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
-.titreEtParagrapheAbout p{
+
+.titreEtParagrapheAbout p {
   text-align: justify;
   letter-spacing: 0.1rem;
   color: #101014;
 }
 
-.imgAbout{
+.imgAbout {
   display: block;
   max-width: 100%;
 }
 
-.contenupresentationVision{
+.contenupresentationVision {
   padding: 1rem 5rem;
   display: flex;
   align-items: flex-start;
   width: 60%;
 }
 
-.contenupresentationcitation{
+.contenupresentationcitation {
   padding: 2rem 5rem;
   display: flex;
   align-items: flex-start;
   width: 100%;
 }
+
 /* fin elements css pour la section A propos*/
 
 /* elements css pour la section services*/
-.section-services  {
+.section-services {
   padding: 1em 3em;
   background-color: #FFA55F;
 }
+
 .titreSectionCenterservices {
   width: 100%;
   text-align: center;
   font-size: 2.5em;
   color: #FFF;
 }
+
 .rowservices {
   display: flex;
   flex-wrap: wrap;
   padding: 1em 1em;
 }
-.columnservices{
+
+.columnservices {
   flex: 0 0 33.33%;
   max-width: 33.33%;
   text-align: center;
 }
+
 .cardservices {
   width: 100%;
   height: 100%;
@@ -355,18 +379,21 @@ h4{
   cursor: pointer;
   transition: 0.5s;
 }
+
 .h3services {
   font-size: 20px;
   font-weight: 600;
   color: #101014;
   margin: 1em 0;
 }
+
 .pservices {
   color: #FFF;
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.03em;
 }
+
 .icon-wrapperservices {
   background-color: #101014;
   position: relative;
@@ -380,19 +407,24 @@ h4{
   place-items: center;
   transition: 0.5s;
 }
+
 .cardservices:hover {
   background-position: 0 100%;
 }
+
 .cardservices:hover .icon-wrapperservices {
   background-color: #ffffff;
   color: #101014;
 }
+
 .cardservices:hover .h3services {
   color: #ffffff;
 }
+
 .cardservices:hover .pservices {
   color: #f0f0f0;
 }
+
 /* fin elements css pour la section service*/
 
 
@@ -400,14 +432,17 @@ h4{
 .section-equipe {
   padding: 1em 3em;
 }
+
 .cardequipe {
   padding: 5em 1em;
 }
+
 .columnequipe {
   flex: 0 0 33.33%;
   max-width: 33.33%;
   padding: 1em 1em;
 }
+
 .rowequipe {
   display: flex;
   flex-wrap: wrap;
@@ -440,11 +475,11 @@ h4{
 }
 
 .titreSectionRight {
-    width: 100%;
-    text-align: right;
-    font-size: 4rem;
-    margin-bottom: 2rem;
-    color: #101014;
+  width: 100%;
+  text-align: right;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #101014;
 }
 
 .cardequipe {
@@ -478,12 +513,12 @@ h4{
 }
 
 .cardequipe p {
-    font-weight: 400;
-    margin: 0em 0 2.5em 0;
-    color: #808080;
-    letter-spacing: 2px;
+  font-weight: 400;
+  margin: 0em 0 2.5em 0;
+  color: #808080;
+  letter-spacing: 2px;
 }
- 
+
 .iconsequipe {
   width: 50%;
   min-width: 180px;
@@ -508,25 +543,28 @@ h4{
   transform: scale(1.15);
 }
 
-.cardequipe:hover p{
-    color: #ffffff;
+.cardequipe:hover p {
+  color: #ffffff;
 }
 
 .iconcolorequipe:hover {
-   color: #101014;
+  color: #101014;
 }
+
 /* fin elements css pour la section equipe*/
 
 /* elements css pour la section qualité*/
-.section-qualite  {
+.section-qualite {
   padding: 1em 3em;
   background-color: #f8f9fb;
 }
+
 .rowqualite {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
 }
+
 .columnqualite {
   flex: 0 50%;
   max-width: 0 50%;
@@ -542,26 +580,27 @@ h4{
   background-color: #ffffff;
 }
 
-.pqualite{
+.pqualite {
   text-align: justify;
 }
 
-.cardqualite h5{
+.cardqualite h5 {
   text-align: left;
 }
 
-.columnwhy{
+.columnwhy {
   display: flex;
   flex-direction: column;
   text-align: start;
 }
 
-.cardvaleurentreprise{
+.cardvaleurentreprise {
   flex: 100%;
   max-width: 100%;
   padding: 0.5em;
   height: 20vh;
 }
+
 .cardvaleurentrepriserow {
   display: grid;
   grid-template-columns: 1fr 7fr;
@@ -569,11 +608,11 @@ h4{
   align-items: stretch;
 }
 
-.columnvaleurentreprise{
+.columnvaleurentreprise {
   padding: 1em 1em;
 }
 
-.columnvaleurentreprise p{
+.columnvaleurentreprise p {
   color: #101014;
   font-size: 15px;
 }
@@ -590,12 +629,13 @@ h4{
   display: grid;
   place-items: center;
 }
+
 /* elements css pour la section qualité*/
 
 /*
     Back To Top Button
 */
-#scroll-top-btn{
+#scroll-top-btn {
   place-items: center;
   height: 4rem;
   width: 4rem;
@@ -607,14 +647,16 @@ h4{
   outline: none;
   border: 0.4rem solid #FFF;
   border-radius: 0.5rem;
-  box-shadow: 0 10px 15px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
   display: none;
 }
-#scroll-top-btn .fas{
+
+#scroll-top-btn .fas {
   color: #FFF;
   font-size: 2rem;
   line-height: 0;
 }
+
 /*
     Back To Top Button
 */
@@ -622,12 +664,103 @@ h4{
 /*
    page contacte
 */
-.bloc-principal {
-  margin:2em;
+.head-formular {
+  text-align: center;
+  font-size: 38px;
+  padding-top: 10px;
 }
 
-/* l'Onglet contact*/
+.main-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.bloc-principal {
+  width: 100%;
+  height: 68vh;
+  background-image: url(img/image-contanct.jpeg);
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 50px 0 0;
+
+}
+
 .bloc-contact {
+  width: 450px;
+  height: 430px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
+}
+
+form {
+
+  /*background-color:aquamarine;*/
+  width: 100%;
+  height: 80%;
+  padding-top: 20px;
+}
+
+.input-email,
+.input-objet,
+.input-message {
+  display: flex;
+  justify-content: center;
+}
+
+.div-btn {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  flex-basis: 95%;
+  margin-top: 20px;
+  height: 43px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #33E8BE;
+  transition: .7s ease;
+}
+
+input,
+textarea {
+  flex-basis: 95%;
+  padding: 10px;
+  border: .2px solid black;
+  border-radius: 3px;
+  outline: none;
+
+
+}
+
+input {
+  height: 40px;
+}
+
+input[type="text"] {
+  margin: 10px 0px;
+}
+
+textarea {
+  height: 170px;
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  line-height: 23px;
+}
+
+
+
+
+
+/* .bloc-contact {
   height: 600px;
   width: 700px;
   margin-top: 50px;
@@ -715,7 +848,4 @@ form button {
 .spte_facebook,
 .spte_insta {
   margin-right: 15px;
-}
-/*
-   page contacte
-*/
+} */
