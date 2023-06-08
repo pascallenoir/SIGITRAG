@@ -43,3 +43,112 @@ navLinks.forEach((navLinks) => {
          /*
    indicateur de position
 */
+
+
+// When the user clicks on div, open the popup
+function pdgmyEmail() {
+  // pdg
+  var pdgmyEmail = document.getElementById("pdgmyEmail");
+  pdgmyEmail.classList.toggle("show");
+}
+
+function pdgmyfacebook() {
+  // pdg
+  var pdgmyfacebook = document.getElementById("pdgmyfacebook");
+  pdgmyfacebook.classList.toggle("show");
+}
+
+function pdgmylinkedin() {
+  // pdg
+  var pdgmylinkedin = document.getElementById("pdgmylinkedin");
+  pdgmylinkedin.classList.toggle("show");
+}
+//////////////////////////////////////////////////////
+
+// When the user clicks on div, open the popup
+function dgmyEmail() {
+  var dgmyEmail = document.getElementById("dgmyEmail");
+  dgmyEmail.classList.toggle("show");
+}
+
+function dgmyfacebook() {
+  var dgmyfacebook = document.getElementById("dgmyfacebook");
+  dgmyfacebook.classList.toggle("show");
+}
+
+function dgmylinkedin() {
+  var dgmylinkedin = document.getElementById("dgmylinkedin");
+  dgmylinkedin.classList.toggle("show");
+}
+//////////////////////////////////////////////////////
+
+
+// When the user clicks on div, open the popup
+function ComptablemyEmail() {
+  var ComptablemyEmail = document.getElementById("ComptablemyEmail");
+  ComptablemyEmail.classList.toggle("show");
+}
+
+function Comptablemyfacebook() {
+  var Comptablemyfacebook = document.getElementById("Comptablemyfacebook");
+  Comptablemyfacebook.classList.toggle("show");
+}
+
+function Comptablemylinkedin() {
+  var Comptablemylinkedin = document.getElementById("Comptablemylinkedin");
+  Comptablemylinkedin.classList.toggle("show");
+}
+//////////////////////////////////////////////////////
+
+// When the user clicks on div, open the popup
+function RespOpmyEmail() {
+  var RespOpmyEmail = document.getElementById("RespOpmyEmail");
+  RespOpmyEmail.classList.toggle("show");
+}
+
+function RespOpmyfacebook() {
+  var RespOpmyfacebook = document.getElementById("RespOpmyfacebook");
+  RespOpmyfacebook.classList.toggle("show");
+}
+
+function RespOpmylinkedin() {
+  var RespOpmylinkedin = document.getElementById("RespOpmylinkedin");
+  RespOpmylinkedin.classList.toggle("show");
+}
+//////////////////////////////////////////////////////
+
+// When the user clicks on div, open the popup
+function RespCommyEmail() {
+  var RespCommyEmail = document.getElementById("RespCommyEmail");
+  RespCommyEmail.classList.toggle("show");
+}
+
+function RespCommyfacebook() {
+  var RespCommyfacebook = document.getElementById("RespCommyfacebook");
+  RespCommyfacebook.classList.toggle("show");
+}
+
+function RespCommylinkedin() {
+  var RespCommylinkedin = document.getElementById("RespCommylinkedin");
+  RespCommylinkedin.classList.toggle("show");
+}
+//////////////////////////////////////////////////////
+
+
+// When the user clicks on div, open the popup
+function RespMarmyEmail() {
+  var RespMarmyEmail = document.getElementById("RespMarmyEmail");
+  RespMarmyEmail.classList.toggle("show");
+}
+
+function RespMarmyfacebook() {
+  var RespMarmyfacebook = document.getElementById("RespMarmyfacebook");
+  RespMarmyfacebook.classList.toggle("show");
+}
+
+function RespMarmylinkedin() {
+  var RespMarmylinkedin = document.getElementById("RespMarmylinkedin");
+  RespMarmylinkedin.classList.toggle("show");
+}
+//////////////////////////////////////////////////////
+

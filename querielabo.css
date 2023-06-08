@@ -1,130 +1,134 @@
 /* Medium Devices: Tablets */
 @media only screen and (max-width: 992px) {
-
-  /* body{
+/* body{
     background-color: orange;
 }    */
-  html {
-    font-size: 56.25%
-  }
-
-  main {
-    margin-top: 65px;
-  }
-
-
-  /* Navigation */
-  #logo,
-  nav a {
-    font-size: 2rem;
-  }
-
-  /* Navigation */
-
-  /* elements css pour la section A propos*/
-  .section-about {
-    background-size: 30%;
-  }
-
-  .contenupresentationAbout {
-    padding: 2rem 5rem;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .contenupresentationVision {
-    padding: 1rem 5rem;
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  .imgAbout {
-    display: block;
-    max-width: 50%;
-    height: auto;
-  }
-
-  /* fin elements css pour la section A propos*/
-
-  /* elements css pour la section service*/
-  .section-services {
-    padding: 1em 2em;
-  }
-
-  .columnservices {
-    flex: 0 50%;
-    max-width: 50%;
-  }
-
-  /* fin elements css pour la section service*/
-
-  /*elements css pour la section equipe*/
-  .section-equipe {
-    padding: 1em 2em;
-  }
-
-  .columnequipe {
-    flex: 0 50%;
-    max-width: 50%;
-  }
-
-  /*elements css pour la section equipe*/
-
-  /*elements css pour la section qualité*/
-  .section-equipe {
-    padding: 1em 1em;
-  }
-
-  /*elements css pour la section qualité*/
-
-
+html {
+	font-size: 56.25%
 }
+
+main {
+  margin-top: 65px;
+}
+
+
+/* Navigation */
+#logo,
+nav a{
+    font-size: 2rem;
+}
+/* Navigation */
+
+/* elements css pour la section A propos*/
+.section-about{
+  background-size: 30%;
+}
+
+.contenupresentationAbout{
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.contenupresentationVision{
+  padding: 1rem 5rem;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.imgAbout{
+  display: block;
+  max-width: 50%;
+  height: auto;
+}
+/* fin elements css pour la section A propos*/
+
+/* elements css pour la section service*/
+.section-services {
+  padding: 1em 2em;
+}
+.columnservices {
+  flex: 0 50%;
+  max-width: 50%;
+}
+/* fin elements css pour la section service*/
+
+/*elements css pour la section equipe*/
+.section-equipe {
+  padding: 1em 2em;
+}
+.columnequipe {
+  flex: 0 50%;
+  max-width: 50%;
+}
+/*elements css pour la section equipe*/
+
+/*elements css pour la section qualité*/
+.section-qualite {
+  padding: 1em 1em;
+}
+/*elements css pour la section qualité*/
 
 
 /* page contact*/
 .bloc-principal {
-  width: 100%;
-  height: 68vh;
-  background-image: url(img/image-contanct.jpeg);
-  background-position: top;
-  background-size: cover;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 20px 50px 0 0;
-  padding-top: 30px;
+  height: auto;
+  padding: 30px 30px 30px 30px;
+}
 
+.bloc-contact {
+  width: 40%;
 }
 
 /* end page contact*/
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Code CSS pour l'ecran Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.servicesImmobilier{
+  padding: 2rem 3rem;
+}
+
+.servicesAmenagement{
+  padding: 2rem 3rem;
+}
+
+.servicestransport{
+  padding: 2rem 3rem;
+}
+
+.servicesagriculture{
+  padding: 2rem 3rem;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! finCode CSS pour l'ecran Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+}
+
 /* Small Devices: Landscape phones */
 @media only screen and (max-width: 768px) {
-
-  /* body{
+/* body{
     background-color: green;
  }   */
-  html {
-    font-size: 56.25%;
-  }
+html {
+	font-size: 56.25%;
+}
 
-  main {
-    margin-top: 40px;
-  }
+main {
+  margin-top: 60px;
+}
 
-  /* Navigation */
-  nav .fas,
-  #logo {
+/* Navigation */
+nav .fas,
+#logo{
     font-size: 2.2rem;
-  }
-
-  nav i.fas {
+}
+nav i.fas{
     display: block;
-
-  }
-
-  nav ul {
+   
+}
+nav ul{
     height: calc(100vh - 40.15px);
     width: 50vw;
     position: fixed;
@@ -132,177 +136,344 @@
     left: -50vw;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items:  flex-start;
     padding: 1em;
     background: #fff;
     justify-content: flex-start;
     transition: 1s;
-  }
-
-  nav ul li a:before {
+}
+nav ul li a:before{
     background-color: var(--clr-white);
-  }
+}
+/* Navigation */
 
-  /* Navigation */
+/*elements css pour la section de slide*/
+.hero-header {
+  height: 300px;
+}
+/*elements css pour la section de slide*/
 
-  /*elements css pour la section de slide*/
-  .hero-header {
-    height: 300px;
-  }
+/*elements css pour la section A propos*/
+.section-about{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0em 1em;
+  background-image: none;
+}
+/*elements css pour la section A propos*/
 
-  /*elements css pour la section de slide*/
+/* elements css pour la section service*/
+.section-services {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.rowservices {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 1em;
+}
+.columnservices {
+  flex: none;
+  max-width: none;
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+/* fin elements css pour la section service*/
 
-  /*elements css pour la section A propos*/
-  .section-about {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 0em 1em;
-    background-image: none;
-  }
-
-  /*elements css pour la section A propos*/
-
-  /* elements css pour la section service*/
-  .section-services {
-    width: 100%;
-    display: grid;
-    place-items: center;
-  }
-
-  .rowservices {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1em 1em;
-  }
-
-  .columnservices {
-    flex: none;
-    max-width: none;
-    width: 100%;
-    padding: 0 1em 1em 1em;
-    text-align: center;
-  }
-
-  /* fin elements css pour la section service*/
-
-  /*elements css pour la section equipe*/
-  .section-equipe {
-    width: 100%;
-    display: grid;
-    place-items: center;
-  }
-
-  .columnequipe {
-    flex: none;
-    max-width: none;
-    width: 100%;
-    padding: 0 1em 1em 1em;
-    text-align: center;
-  }
-
-  /*elements css pour la section equipe*/
-
-  /*elements css pour la section qualité*/
-  .section-qualite {
-    padding: 1em 2em;
-  }
-
-  .columnqualite {
-    flex: 100%;
-    padding: 1em 1em;
-  }
-
-  /*elements css pour la section qualité*/
-
-  /*
-   page contacte
-*/
-  .bloc-contact {
-
-    width: 100%;
-    margin-top: 50px;
-    margin: 0px auto;
-    padding-top: 25px;
-  }
-
-  form {
-    width: 100%;
-    padding: 20px;
-    height: 360px;
-  }
-
-  .les_sprites {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-  }
-
-  form button {
-    padding: 5px 30px;
-    cursor: pointer;
-    border-radius: 3px;
-    border: none;
-    font-size: 20px;
-    position: relative;
-    left: 0%;
-    top: -5px;
-    width: 100%;
-    height: 40px;
-  }
-
-  /* page contact*/
-  .bloc-principal {
-    width: 100%;
-    height: 68vh;
-    background-image: url(img/image-contanct.jpeg);
-    background-position: top;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 50px 0 0;
-    padding-top: 30px;
-    padding-left: 30px;
-
-  }
-
-  /* end page contact*/
+/*elements css pour la section equipe*/
+.section-equipe  {
+  width: 100%;
+  display: grid;
+  place-items: center;
 }
 
+.columnequipe {
+  flex: none;
+  max-width: none;
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+/*elements css pour la section equipe*/
+
+/*elements css pour la section qualité*/
+.section-qualite  {
+  padding: 1em 2em;
+}
+.columnqualite {
+  flex: 100%;
+  padding: 1em 1em;
+}
+/*elements css pour la section qualité*/
+
+/* page contact*/
+.bloc-principal {
+  height: auto;
+  padding: 30px 30px 30px 30px;
+}
+
+.bloc-contact {
+  width: 50%;
+}
+
+/* end page contact*/
+/*
+   page contacte
+*/
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Code CSS pour l'ecran Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*
+Section services gestion immobiliere
+
+*/
+.servicesImmobilier{
+  padding: 1rem;
+}
+
+.rowservicesImmobilier{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.columnservicesImmobilier {
+  flex: 0 50%;
+  max-width: 45%;
+}
+
+/*
+
+Section services Amenagement foncier
+
+*/
+.servicesAmenagement{
+  padding: 1rem;
+}
+
+.rowservicesAmenagement{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.columnservicesAmenagement {
+flex: 0 50%;
+max-width: 45%;
+}
+
+/*
+
+Section services gestion transport
+
+*/
+.servicestransport{
+  padding: 1rem;
+}
+
+.rowservicestransport{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.columnservicestransport {
+  flex: 0 50%;
+  max-width: 45%;
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! fin Code CSS pour l'ecran Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+}
 /* Extra Small Devices: Potrait Phones*/
-@media only screen and (max-width: 576px) {
-  html {
-    font-size: 50%;
-  }
+@media only screen and (max-width: 576px) { 
+html {
+	font-size: 50%;
+}
 
-  /* Navigation */
-  nav ul {
-    height: calc(100vh - 35.93px);
-    top: 35.93px
-  }
+/* Navigation */
+nav ul{
+  height: calc(100vh - 35.93px);
+  top: 35.93px
+}
+/* Navigation */
 
-  /* Navigation */
+/*elements css pour la section qualité*/
+.section-qualite  {
+  padding: 1em 1em;
+}
+/*elements css pour la section qualité*/
 
-  /*elements css pour la section qualité*/
-  .section-qualite {
-    padding: 1em 1em;
-  }
+/* page contact*/
+.bloc-principal {
+  height: auto;
+  padding: 10px 0px 10px 0px;
+  justify-content: center;
+}
 
-  /*elements css pour la section qualité*/
+.bloc-contact {
+  width: 80%;
+}
 
-  /*
-   page contacte
+/* end page contact*/
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Code CSS pour l'ecran Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* 
+-------------- 
+    Header services gestion immobiliere
+--------------
 */
-  .head-formular {
-    text-align: center;
-    font-size: 24px;
-    padding-top: 10px;
-  }
+#homeservices{
+  grid-template-columns: 1fr;
+}
+#homeservices img{
+  grid-row: 1;
+}
 
-  /*
-   page contacte
+/* 
+-------------- 
+    Header services Amenagement foncier
+--------------
 */
+#homeAmenagement{
+  grid-template-columns: 1fr;
+}
+#homeAmenagement img{
+  grid-row: 1;
+}
+
+/* 
+-------------- 
+    Header services gestion transport
+--------------
+*/
+#hometransport{
+  grid-template-columns: 1fr;
+}
+#hometransport img{
+  grid-row: 1;
+}
+
+/* 
+-------------- 
+    Header services Amenagement foncier
+--------------
+*/
+#homeagriculture{
+  grid-template-columns: 1fr;
+}
+
+#homeagriculture img{
+  grid-row: 1;
+}
+
+
+/*
+Section services gestion immobiliere
+
+*/
+.servicesImmobilier{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.rowservicesImmobilier{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 1em;
+}
+
+.columnservicesImmobilier {
+  flex: none;
+  max-width: none;
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+
+/*
+
+Section services Amenagement foncier
+
+*/
+.servicesAmenagement{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.rowservicesAmenagement{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 1em;
+}
+
+.columnservicesAmenagement {
+  flex: none;
+  max-width: none;
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+
+/*
+
+Section services gestion transport
+
+*/
+.servicestransport{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.rowservicestransport{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 1em;
+}
+
+.columnservicestransport {
+  flex: none;
+  max-width: none;
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+/*
+
+Section services Amenagement foncier
+
+*/
+.servicesagriculture{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.rowservicesagriculture{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 1em;
+}
+.columnservicesagriculture{
+  flex: none;
+  max-width: none;
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! fin Code CSS pour l'ecran Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 /* 320px (points de vue de téléphone plus petits)*/
@@ -312,34 +483,20 @@
    page contacte
 */
 
-  .head-formular {
-    text-align: center;
-    font-size: 28px;
-    padding-top: 10px;
-  }
 
+/* page contact*/
+.bloc-principal {
+  height: auto;
+  padding: 10px 10px 20px 10px;
+  justify-content: center;
+}
 
+.bloc-contact {
+  width: 100%;
+}
 
-
-  .bloc-principal {
-    width: 100%;
-    height: 115vh;
-    background-image: url(img/image-contanct.jpeg);
-    background-position: top;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    padding: 65px 10px 0px 10px;
-
-  }
-
-  .bloc-contact {
-    width: 450px;
-    height: 480px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
-
-  }
+/* end page contact*/
 
 }
+
+

@@ -89,23 +89,29 @@ button {
 }
 div.social {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   font-size: 2.4em;
   flex-direction: row;
   margin-top: 0.5em;
 }
 .social i {
   color: #bac6d9;
+  margin: 0.2em;
 }
 
 .copyright {
   padding: 0.3em 1em;
   background-color: #25262e;
 }
+.copyright .localisation{
+  font-size: 0.9em;
+  text-align: left;
+  color: lightgray;
+}
 
 .copyright p {
   font-size: 0.9em;
-  text-align: right;
+  text-align: center;
   color: white;
 }
 
@@ -146,7 +152,6 @@ div.social {
 
 }
 
-
 @media screen and (max-width: 992px) {
   .row.primary {
     display: grid;
@@ -170,72 +175,74 @@ div.social {
 
 }
 
+
 </style>
 
 <!-- pieds de page du site internet mettant en avant les informations relatives a la dite societe -->
 <footer>
-  <div class="row primary">
-      <div class="column about">
-  
-          <h1>SIGITRAG</h1>
-          <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-          </p>
-      </div>
-  
-      <div class="column statistiques">
-          <h3>Statistiques</h3>
-          <ul>
+<div class="row primary">
+    <div class="column about">
+
+        <h1>SIGITRAG</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+        </p>
+    </div>
+
+    <div class="column statistiques">
+        <h3>Statistiques</h3>
+        <ul>
+          <li>
+            <a>Services livrés :</a>
+          </li>
+          <li>
+            <div class="Rating">
+              <p class="Ratingp">
+                3265
+              </p>
+            </div>
+          </li>
+          <li>
+            <a>Satisfaction client :</a>
+          </li>
+          <li>
+            <div class="Stars" style="--rating: 2.9;" aria-label="Rating of this product is 2.3 out of 5."></div>
+          </li>
+      </ul>
+    </div>
+
+    <div class="column links">
+        <h3>A propos de SIGITRAG</h3>
+        <ul>
             <li>
-              <a href="#support">Services livrés :</a>
+              <a href="index.html#ancrepouraboutyou">Qui sommes nous ?</a>
             </li>
             <li>
-              <div class="Rating">
-                <p class="Ratingp">
-                  3265
-                </p>
-              </div>
+              <a href="index.html#ancrepourservices">Nos Services</a>
             </li>
             <li>
-              <a href="#support">Satisfaction client :</a>
+              <a href="index.html#ancrepournouschoisir">Pourquoi nous choisir ?</a>
             </li>
             <li>
-              <div class="Stars" style="--rating: 2.9;" aria-label="Rating of this product is 2.3 out of 5."></div>
+              <a href="index.html#ancrepouraboutyou">Devenir propriétaire</a>
             </li>
         </ul>
-      </div>
-  
-      <div class="column links">
-          <h3>A propos de SIGITRAG</h3>
-          <ul>
-              <li>
-                <a href="#faq">Devenir propriétaire</a>
-              </li>
-              <li>
-                <a href="#cookies-policy">Nos Services</a>
-              </li>
-              <li>
-                <a href="#terms-of-services">Pourquoi nous choisir ?</a>
-              </li>
-              <li>
-                <a href="#support">Notre localisation</a>
-              </li>
-          </ul>
-      </div>
-  </div>
-  
-  <div class="row copyright">
-      <div class="social">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-whatsapp"></i>
-      </div>
-      <p>Copyright &copy; 2023 Bumpy Society</p>
-  </div>
-  </footer>
+    </div>
+</div>
+
+<div class="row copyright">
+    <div class="social">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-whatsapp"></i>
+    </div>
+    <p class="localisation">Cote d'ivoire - Abidjan_cocody Angré Nouveau CHU</p>
+    <p>Copyright &copy; 2023 Bumpy Society</p>
+</div>
+</footer>
 `;
 // fin Variable comprenant le contenu de code source du footer
 

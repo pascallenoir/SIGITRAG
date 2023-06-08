@@ -1,75 +1,71 @@
 @font-face {
   font-family: 'latoregular';
   src: url('fonts/lato_regular/lato-regular-webfont.woff2') format('woff2'),
-    url('fonts/lato_regular/lato-regular-webfont.woff') format('woff');
+      url('fonts/lato_regular/lato-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'latobold';
   src: url('fonts/lato_bold/lato-bold-webfont.woff2') format('woff2'),
-    url('fonts/lato_bold/lato-bold-webfont.woff') format('woff');
+       url('fonts/lato_bold/lato-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'lato_blackregular';
   src: url('fonts/lato_black/lato-black-webfont.woff2') format('woff2'),
-    url('fonts/lato_black/lato-black-webfont.woff') format('woff');
+       url('fonts/lato_black/lato-black-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
   --star-size: 25px;
-  --star-color: rgba(0, 0, 0, 0.20);
+  --star-color: rgba(0,0,0,0.20);
   --star-background: #000;
   --star-backgroundcard: #fc0;
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-html {
+html{
   font-size: 75%;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "latoregular", "sans-serif";
-  font-weight: 300;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
+    font-family: "latoregular", "sans-serif"; 
+    font-weight: 300;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Scroll Indicator */
-.progress-container {
+.progress-container{
   width: 100%;
   height: 1rem;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255,255,255,0.5);
   backdrop-filter: blur(0.8rem);
   z-index: 1;
 }
-
-#progress {
-  width: 0;
-  height: 100%;
-  background-color: #34EDC2;
+#progress{
+ width: 0;
+ height: 100%;
+ background-color: #34EDC2;
 }
-
 /* fin Scroll Indicator */
 
 /* Navigation */
-nav {
+nav{
   width: 100%;
   display: flex;
   align-items: center;
@@ -78,30 +74,26 @@ nav {
   position: fixed;
   top: 1rem;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255,255,255,0.5);
   backdrop-filter: blur(8px);
-  box-shadow: 0 1.5rem 2rem rgba(60, 60, 200, 0.05);
+  box-shadow: 0 1.5rem 2rem rgba(60,60,200,0.05);
   z-index: 1;
 }
-
-nav .fas {
+nav .fas{
   font-size: 1.6rem;
 }
-
-#logo {
+#logo{
   font-family: "lato_blackregular", "sans-serif";
   font-weight: 900;
   font-size: 2rem;
 }
-
-nav ul {
+nav ul{
   list-style: none;
   display: flex;
   justify-content: space-around;
   gap: 2rem;
 }
-
-nav a {
+nav a{
   color: #101014;
   text-decoration: none;
   display: block;
@@ -110,8 +102,7 @@ nav a {
   font-family: "latoregular", "sans-serif";
   font-weight: 400;
 }
-
-nav li a:before {
+nav li a:before{
   content: "";
   position: absolute;
   width: 0;
@@ -121,56 +112,51 @@ nav li a:before {
   margin-left: -5%;
   transition: width 0.5s;
 }
-
-nav li a:hover:before {
+nav li a:hover:before{
   width: 110%;
 }
-
-nav i.fas {
+nav i.fas{
   display: none;
 }
 
 /* Active Hamburger Menu */
 
-nav ul.active {
+nav ul.active{
   left: 0;
 }
-
-nav ul.active li a {
+nav ul.active li a{
   font-size: 2.5rem;
 }
-
 /* Navigation */
 
 main {
-  flex: 1 0 auto;
-  margin-top: 85px;
+    flex: 1 0 auto;
+    margin-top: 85px;
 }
 
 /*elements css pour la section de slide*/
 .hero-header {
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  text-align: left;
-  color: #fff;
-  text-shadow: 2px 2px 8px #101014;
-  background-color: #101014;
-  height: 450px;
-  display: flex;
-  align-items: flex-end;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: left;
+    color: #fff;
+    text-shadow: 2px 2px 8px #101014;
+    background-color: #101014;
+    height: 450px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .hero-header .container {
   width: 100%;
   padding: 1em;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
+  background-color: rgba(0,0,0,0.5);
+} 
 /* .hero-header .intro-text {
     /* padding-top: 100px;
     margin-left: 5%;
@@ -178,116 +164,118 @@ main {
 } */
 
 .hero-header .intro-text .intro-lead-in {
-  font-size: 20px;
-  line-height: 20px;
-  margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 5px;
 }
 
 .hero-header .intro-text .intro-heading {
-  font-weight: bold;
-  font-size: 35px;
-  line-height: 35px;
-  margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 10px;
 }
+
+.hero-header a {
+  text-decoration: none;
+}
+
 
 /* bouton d'action du slide */
-.btn-primary {
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
-  transition: 0.5s;
+.btn-primary{
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    transition: 0.5s;
 }
-
-.btn-primary {
-  background-color: #101014;
-  color: #FFF;
-  font-size: 15px;
+.btn-primary{
+    background-color: #101014;
+    color: #FFF;
+    font-size: 15px;
 }
-
-.btn-primary:hover {
-  background-color: #34EDC2;
+.btn-primary:hover{
+    background-color: #34EDC2;
 }
 
 .hero-header .video-holder {
-  margin: 25px 0;
+    margin: 25px 0;
 }
 
 .hero-header video {
-  max-width: 700px;
-  width: 100%;
+    max-width: 700px;
+    width: 100%;
 }
 
 .lead1 {
 
-  font-size: 15px !important;
+    font-size: 15px !important;
 }
 
-#sliderDePresentation {
-  overflow: hidden;
+#sliderDePresentation{
+    overflow: hidden;
 }
 
 #sliderDePresentation figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  animation: 30s slider infinite;
+    position: relative;
+    width:500%;
+    margin: 0;
+    left: 0;
+    animation: 30s slider infinite;
 }
 
 #sliderDePresentation figure header {
-  width: 20%;
-  float: left;
-}
+    width:20%;
+    float: left;
+}   
 
 @keyframes slider {
 
-  0% {
-    left: 0;
-  }
+    0% {
+        left:0;
+    }
 
-  20% {
-    left: 0;
-  }
+    20% {
+        left:0;
+    }
 
-  25% {
-    left: -100%;
-  }
+    25% {
+        left:-100%;
+    }
 
-  45% {
-    left: -100%;
-  }
+    45% {
+        left:-100%;
+    }
 
-  50% {
-    left: -200%;
-  }
+    50% {
+        left:-200%;
+    }
 
-  70% {
-    left: -200%;
-  }
+    70% {
+        left:-200%;
+    }
 
-  75% {
-    left: -300%;
-  }
+    75% {
+        left:-300%;
+    }
 
-  95% {
-    left: -300%;
-  }
+    95% {
+        left:-300%;
+    }
 
-  100% {
-    left: -400%;
-  }
+    100% {
+        left:-400%;
+    }
 
-  120% {
-    left: -400%;
-  }
+    120% {
+        left:-400%;
+    }
 }
-
 /* fin elements css pour la section de slide*/
 
 
 /*elements css pour la section A propos*/
-.section-about {
+.section-about{
   display: flex;
   flex-wrap: wrap;
   padding: 1em 1em 0em 1em;
@@ -298,78 +286,71 @@ main {
   background-color: #FFF;
 }
 
-.contenupresentationAbout {
+.contenupresentationAbout{
   padding: 2rem 5rem;
   display: grid;
   grid-template-columns: 6fr 4fr;
   grid-gap: 20px;
   align-items: center;
 }
-
-h3 {
+h3{
   font-family: "lato_blackregular", "sans-serif";
   font-weight: 900;
   font-size: 4rem;
   margin-bottom: 2rem;
 }
 
-h4 {
+h4{
   font-size: 3rem;
   margin-bottom: 2rem;
 }
-
-.titreEtParagrapheAbout p {
+.titreEtParagrapheAbout p{
   text-align: justify;
   letter-spacing: 0.1rem;
   color: #101014;
 }
 
-.imgAbout {
+.imgAbout{
   display: block;
   max-width: 100%;
 }
 
-.contenupresentationVision {
+.contenupresentationVision{
   padding: 1rem 5rem;
   display: flex;
   align-items: flex-start;
   width: 60%;
 }
 
-.contenupresentationcitation {
+.contenupresentationcitation{
   padding: 2rem 5rem;
   display: flex;
   align-items: flex-start;
   width: 100%;
 }
-
 /* fin elements css pour la section A propos*/
 
 /* elements css pour la section services*/
-.section-services {
+.section-services  {
   padding: 1em 3em;
   background-color: #FFA55F;
 }
-
 .titreSectionCenterservices {
   width: 100%;
   text-align: center;
   font-size: 2.5em;
   color: #FFF;
 }
-
 .rowservices {
   display: flex;
   flex-wrap: wrap;
   padding: 1em 1em;
 }
-
-.columnservices {
+.columnservices{
   flex: 0 0 33.33%;
   max-width: 33.33%;
   text-align: center;
 }
-
 .cardservices {
   width: 100%;
   height: 100%;
@@ -379,21 +360,18 @@ h4 {
   cursor: pointer;
   transition: 0.5s;
 }
-
 .h3services {
   font-size: 20px;
   font-weight: 600;
   color: #101014;
   margin: 1em 0;
 }
-
 .pservices {
   color: #FFF;
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.03em;
 }
-
 .icon-wrapperservices {
   background-color: #101014;
   position: relative;
@@ -407,24 +385,19 @@ h4 {
   place-items: center;
   transition: 0.5s;
 }
-
 .cardservices:hover {
   background-position: 0 100%;
 }
-
 .cardservices:hover .icon-wrapperservices {
   background-color: #ffffff;
   color: #101014;
 }
-
 .cardservices:hover .h3services {
   color: #ffffff;
 }
-
 .cardservices:hover .pservices {
   color: #f0f0f0;
 }
-
 /* fin elements css pour la section service*/
 
 
@@ -432,17 +405,14 @@ h4 {
 .section-equipe {
   padding: 1em 3em;
 }
-
 .cardequipe {
   padding: 5em 1em;
 }
-
 .columnequipe {
   flex: 0 0 33.33%;
   max-width: 33.33%;
   padding: 1em 1em;
 }
-
 .rowequipe {
   display: flex;
   flex-wrap: wrap;
@@ -475,11 +445,11 @@ h4 {
 }
 
 .titreSectionRight {
-  width: 100%;
-  text-align: right;
-  font-size: 4rem;
-  margin-bottom: 2rem;
-  color: #101014;
+    width: 100%;
+    text-align: right;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: #101014;
 }
 
 .cardequipe {
@@ -513,12 +483,12 @@ h4 {
 }
 
 .cardequipe p {
-  font-weight: 400;
-  margin: 0em 0 2.5em 0;
-  color: #808080;
-  letter-spacing: 2px;
+    font-weight: 400;
+    margin: 0em 0 2.5em 0;
+    color: #808080;
+    letter-spacing: 2px;
 }
-
+ 
 .iconsequipe {
   width: 50%;
   min-width: 180px;
@@ -543,28 +513,25 @@ h4 {
   transform: scale(1.15);
 }
 
-.cardequipe:hover p {
-  color: #ffffff;
+.cardequipe:hover p{
+    color: #ffffff;
 }
 
 .iconcolorequipe:hover {
-  color: #101014;
+   color: #101014;
 }
-
 /* fin elements css pour la section equipe*/
 
 /* elements css pour la section qualité*/
-.section-qualite {
+.section-qualite  {
   padding: 1em 3em;
   background-color: #f8f9fb;
 }
-
 .rowqualite {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
 }
-
 .columnqualite {
   flex: 0 50%;
   max-width: 0 50%;
@@ -580,27 +547,26 @@ h4 {
   background-color: #ffffff;
 }
 
-.pqualite {
+.pqualite{
   text-align: justify;
 }
 
-.cardqualite h5 {
+.cardqualite h5{
   text-align: left;
 }
 
-.columnwhy {
+.columnwhy{
   display: flex;
   flex-direction: column;
   text-align: start;
 }
 
-.cardvaleurentreprise {
+.cardvaleurentreprise{
   flex: 100%;
   max-width: 100%;
   padding: 0.5em;
   height: 20vh;
 }
-
 .cardvaleurentrepriserow {
   display: grid;
   grid-template-columns: 1fr 7fr;
@@ -608,11 +574,11 @@ h4 {
   align-items: stretch;
 }
 
-.columnvaleurentreprise {
+.columnvaleurentreprise{
   padding: 1em 1em;
 }
 
-.columnvaleurentreprise p {
+.columnvaleurentreprise p{
   color: #101014;
   font-size: 15px;
 }
@@ -629,13 +595,12 @@ h4 {
   display: grid;
   place-items: center;
 }
-
 /* elements css pour la section qualité*/
 
 /*
     Back To Top Button
 */
-#scroll-top-btn {
+#scroll-top-btn{
   place-items: center;
   height: 4rem;
   width: 4rem;
@@ -647,29 +612,22 @@ h4 {
   outline: none;
   border: 0.4rem solid #FFF;
   border-radius: 0.5rem;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.12);
   display: none;
 }
-
-#scroll-top-btn .fas {
+#scroll-top-btn .fas{
   color: #FFF;
   font-size: 2rem;
   line-height: 0;
 }
-
 /*
     Back To Top Button
 */
 
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! page contacte !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*
    page contacte
 */
-.head-formular {
-  text-align: center;
-  font-size: 38px;
-  padding-top: 10px;
-}
-
 .main-p {
   display: flex;
   justify-content: center;
@@ -679,30 +637,43 @@ h4 {
 
 .bloc-principal {
   width: 100%;
-  height: 68vh;
+  /* height: 68vh; */
   background-image: url(img/image-contanct.jpeg);
   background-position: top;
   background-size: cover;
   display: flex;
   justify-content: flex-end;
-  padding: 20px 50px 0 0;
+  padding: 50px 50px 50px 50px;
 
 }
 
 .bloc-contact {
-  width: 450px;
-  height: 430px;
+  width: 35%;
+  height: auto;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
 }
 
-form {
+.head-formular {
+  text-align: left;
+  font-size: 2rem;
+  margin: 15px;
+}
 
+.bloc-contact p{
+  text-align: left justify;
+  font-size: 1rem;
+  margin: 15px;
+  color: gray;
+}
+
+
+form {
   /*background-color:aquamarine;*/
   width: 100%;
   height: 80%;
-  padding-top: 20px;
+  padding: 10px;
 }
 
 .input-email,
@@ -723,27 +694,37 @@ button {
   height: 43px;
   font-size: 20px;
   border: none;
+  border-radius: 6px;
   cursor: pointer;
+  background-color: #000;
+  color: #FFF;
 }
 
 button:hover {
   background-color: #33E8BE;
   transition: .7s ease;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.12);
+
 }
 
 input,
 textarea {
   flex-basis: 95%;
   padding: 10px;
-  border: .2px solid black;
-  border-radius: 3px;
+  border: .2px solid lightgray;
+  border-radius: 6px;
   outline: none;
-
-
 }
 
 input {
   height: 40px;
+}
+
+input:focus {
+  height: 40px;
+  border: .2px solid #34EDC2;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.12);
+
 }
 
 input[type="text"] {
@@ -751,101 +732,398 @@ input[type="text"] {
 }
 
 textarea {
-  height: 170px;
+  height: 150px;
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
   line-height: 23px;
 }
 
+textarea:focus {
+  height: 170px;
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  line-height: 23px;
+  border: .2px solid #34EDC2;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.12);
+
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! fin page contacte !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Code CSS pour l'ecran Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-/* .bloc-contact {
-  height: 600px;
-  width: 700px;
-  margin-top: 50px;
-  margin: 0px auto;
-  padding-top: 25px;
-  border-radius: .8em;
+/* 
+-------------- 
+    Header services gestion immobiliere
+--------------
+*/
+#homeservices{
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  align-items: center;
+  grid-gap: 20px;
+}
+#homeservices h3{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+header .textservices p{
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  color: var(--clr-grey);
+}
+header .btnservices{
+  display: flex;
+  width: 20%;
+  gap: 2rem;
+}
+#homeservices img{
+  display: block;
+  width: 100%;
+  border-radius: 10.8rem 10.8rem 0.8rem 10.8rem ;
+}
+
+header .btnservices a{
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+/*
+
+Section services gestion immobiliere
+
+*/
+.servicesImmobilier{
+    padding: 5rem 7rem;
+    background-color: #34EDC2;
+}
+.servicesImmobilier h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 2rem 0 5rem 0;
+    text-align: center;
+}
+
+.rowservicesImmobilier{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.servicesImmobilier h6{
+  text-align: justify start;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1rem 0 1rem 0;
+  color: #101014;
+}
+.servicesImmobilier p{
+  text-align: justify;
+  color: #101014;
+}
+.servicesImmobilier .columnservicesImmobilier{
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
   box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
-
 }
 
-.bloc-contact h2 {
-  text-align: center;
-
+/* 
+-------------- 
+    Header services Amenagement foncier
+--------------
+*/
+#homeAmenagement{
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  align-items: center;
+  grid-gap: 20px;
 }
-
-form {
-  width: 650px;
-  padding: 20px;
-  height: 350px;
-
-  margin: 10px auto;
-
+#homeAmenagement h3{
+  font-size: 4rem;
+  margin-bottom: 2rem;
 }
-
-.input-email,
-.input-message,
-.input-objet {
+header .textAmenagement p{
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  color: var(--clr-grey);
+}
+header .btnAmenagement{
   display: flex;
-  padding-bottom: 20px;
+  width: 20%;
+  gap: 2rem;
+}
+#homeAmenagement img{
+  display: block;
+  width: 100%;
+  border-radius: 10.8rem 10.8rem 10.8rem 0.8rem;
 }
 
-input,
-textarea {
-  padding: 5px;
-  flex-basis: 100%;
-  outline: none;
-  border: 1px solid black;
-  border-radius: 4px;
+header .btnAmenagement a{
+  margin-top: 2rem;
+  text-decoration: none;
 }
 
-textarea {
-  font-size: 20px;
-  font-family: "latoregular", "sans-serif";
+/*
 
+Section services Amenagement foncier
+
+*/
+.servicesAmenagement{
+    padding: 5rem 7rem;
+    background-color: #34EDC2;
+}
+.servicesAmenagement h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 2rem 0 5rem 0;
+    text-align: center;
+}
+.rowservicesAmenagement{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+    margin:1em;
 }
 
-input {
-  height: 43px;
-  font-size: 15px;
-  border-radius: 3px;
+.columnservicesAmenagement {
+  flex: 0 0 30.33%;
+  max-width: 30.33%;
 }
 
-.input-message {
-  height: 160px;
+.servicesAmenagement h6{
+  text-align: justify start;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1rem 0 1rem 0;
+  color: #101014;
+}
+.servicesAmenagement p{
+  text-align: justify;
+  color: #101014;
+}
+.servicesAmenagement .columnservicesAmenagement{
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
 }
 
-form button {
-  padding: 5px 30px;
+
+
+/* 
+-------------- 
+    Header services gestion transport
+--------------
+*/
+#hometransport{
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  align-items: center;
+  grid-gap: 20px;
+}
+#hometransport h3{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+header .texttransport p{
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  color: var(--clr-grey);
+}
+header .btntransport{
+  display: flex;
+  width: 20%;
+  gap: 2rem;
+}
+#hometransport img{
+  display: block;
+  width: 100%;
+  border-radius: 10.8rem 10.8rem 10.8rem 0.8rem;
+}
+
+header .btntransport a{
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+/*
+
+Section services gestion transport
+
+*/
+.servicestransport{
+    padding: 5rem 7rem;
+    background-color: #34EDC2;
+}
+.servicestransport h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 2rem 0 5rem 0;
+    text-align: center;
+}
+.rowservicestransport{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    margin:1em;
+}
+.servicestransport h6{
+  text-align: justify start;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1rem 0 1rem 0;
+  color: #101014;
+}
+.servicestransport p{
+  text-align: justify;
+  color: #101014;
+}
+.servicestransport .columnservicestransport{
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
+}
+
+/* 
+-------------- 
+    Header services Amenagement foncier
+--------------
+*/
+#homeagriculture{
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  align-items: center;
+  grid-gap: 20px;
+}
+#homeagriculture h3{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+header .textagriculture p{
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  color: var(--clr-grey);
+}
+header .btnagriculture{
+  display: flex;
+  width: 20%;
+  gap: 2rem;
+}
+#homeagriculture img{
+  display: block;
+  width: 100%;
+  border-radius: 10.8rem 10.8rem 10.8rem 0.8rem;
+}
+
+header .btnagriculture a{
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+/*
+
+Section services Amenagement foncier
+
+*/
+.servicesagriculture{
+    padding: 5rem 7rem;
+    background-color: #34EDC2;
+}
+.servicesagriculture h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 2rem 0 5rem 0;
+    text-align: center;
+}
+.rowservicesagriculture{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    margin:1em;
+}
+.servicesagriculture h6{
+  text-align: justify start;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1rem 0 1rem 0;
+  color: #101014;
+}
+.servicesagriculture p{
+  text-align: justify;
+  color: #101014;
+}
+.servicesagriculture .columnservicesagriculture{
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
+}
+
+
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
   cursor: pointer;
-  border-radius: 5px;
-  border: none;
-  font-size: 16px;
-  position: relative;
-  left: 82%;
-  top: -5px;
-  background-color: black;
-  color: #fff;
-
-
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.span-bloc-contact {
-  position: relative;
-  left: 48%;
-  font-size: 25px;
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  background-color: #FFF;
+  color: #101014;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  padding: 8px 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
 }
 
-.les_sprites {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #FFF transparent transparent transparent;
 }
 
-.spte_gmail,
-.spte_facebook,
-.spte_insta {
-  margin-right: 15px;
-} */
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+
+
