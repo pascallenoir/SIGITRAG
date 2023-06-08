@@ -176,6 +176,11 @@ main {
     margin-bottom: 10px;
 }
 
+.hero-header a {
+  text-decoration: none;
+}
+
+
 /* bouton d'action du slide */
 .btn-primary{
     padding: 1rem 2rem;
@@ -619,103 +624,506 @@ h4{
     Back To Top Button
 */
 
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! page contacte !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*
    page contacte
 */
+.main-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .bloc-principal {
-  margin:2em;
+  width: 100%;
+  /* height: 68vh; */
+  background-image: url(img/image-contanct.jpeg);
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  padding: 50px 50px 50px 50px;
+
 }
 
-/* l'Onglet contact*/
 .bloc-contact {
-  height: 600px;
-  width: 700px;
-  margin-top: 50px;
-  margin: 0px auto;
-  padding-top: 25px;
-  border-radius: .8em;
+  width: 35%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px;
   box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
-
 }
 
-.bloc-contact h2 {
-  text-align: center;
-
+.head-formular {
+  text-align: left;
+  font-size: 2rem;
+  margin: 15px;
 }
+
+.bloc-contact p{
+  text-align: left justify;
+  font-size: 1rem;
+  margin: 15px;
+  color: gray;
+}
+
 
 form {
-  width: 650px;
-  padding: 20px;
-  height: 350px;
-
-  margin: 10px auto;
-
+  /*background-color:aquamarine;*/
+  width: 100%;
+  height: 80%;
+  padding: 10px;
 }
 
 .input-email,
-.input-message,
-.input-objet {
+.input-objet,
+.input-message {
   display: flex;
-  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.div-btn {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  flex-basis: 95%;
+  margin-top: 20px;
+  height: 43px;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #000;
+  color: #FFF;
+}
+
+button:hover {
+  background-color: #33E8BE;
+  transition: .7s ease;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.12);
+
 }
 
 input,
 textarea {
-  padding: 5px;
-  flex-basis: 100%;
+  flex-basis: 95%;
+  padding: 10px;
+  border: .2px solid lightgray;
+  border-radius: 6px;
   outline: none;
-  border: 1px solid black;
-  border-radius: 4px;
-}
-
-textarea {
-  font-size: 20px;
-  font-family: "latoregular", "sans-serif";
-
 }
 
 input {
-  height: 43px;
-  font-size: 15px;
-  border-radius: 3px;
+  height: 40px;
 }
 
-.input-message {
-  height: 160px;
-}
-
-form button {
-  padding: 5px 30px;
-  cursor: pointer;
-  border-radius: 5px;
-  border: none;
-  font-size: 16px;
-  position: relative;
-  left: 82%;
-  top: -5px;
-  background-color: black;
-  color: #fff;
-
+input:focus {
+  height: 40px;
+  border: .2px solid #34EDC2;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.12);
 
 }
 
-.span-bloc-contact {
-  position: relative;
-  left: 48%;
-  font-size: 25px;
+input[type="text"] {
+  margin: 10px 0px;
 }
 
-.les_sprites {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
+textarea {
+  height: 150px;
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  line-height: 23px;
 }
 
-.spte_gmail,
-.spte_facebook,
-.spte_insta {
-  margin-right: 15px;
+textarea:focus {
+  height: 170px;
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  line-height: 23px;
+  border: .2px solid #34EDC2;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.12);
+
 }
-/*
-   page contacte
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! fin page contacte !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Code CSS pour l'ecran Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/* 
+-------------- 
+    Header services gestion immobiliere
+--------------
 */
+#homeservices{
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  align-items: center;
+  grid-gap: 20px;
+}
+#homeservices h3{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+header .textservices p{
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  color: var(--clr-grey);
+}
+header .btnservices{
+  display: flex;
+  width: 20%;
+  gap: 2rem;
+}
+#homeservices img{
+  display: block;
+  width: 100%;
+  border-radius: 10.8rem 10.8rem 0.8rem 10.8rem ;
+}
+
+header .btnservices a{
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+/*
+
+Section services gestion immobiliere
+
+*/
+.servicesImmobilier{
+    padding: 5rem 7rem;
+    background-color: #34EDC2;
+}
+.servicesImmobilier h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 2rem 0 5rem 0;
+    text-align: center;
+}
+
+.rowservicesImmobilier{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.servicesImmobilier h6{
+  text-align: justify start;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1rem 0 1rem 0;
+  color: #101014;
+}
+.servicesImmobilier p{
+  text-align: justify;
+  color: #101014;
+}
+.servicesImmobilier .columnservicesImmobilier{
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
+}
+
+/* 
+-------------- 
+    Header services Amenagement foncier
+--------------
+*/
+#homeAmenagement{
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  align-items: center;
+  grid-gap: 20px;
+}
+#homeAmenagement h3{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+header .textAmenagement p{
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  color: var(--clr-grey);
+}
+header .btnAmenagement{
+  display: flex;
+  width: 20%;
+  gap: 2rem;
+}
+#homeAmenagement img{
+  display: block;
+  width: 100%;
+  border-radius: 10.8rem 10.8rem 10.8rem 0.8rem;
+}
+
+header .btnAmenagement a{
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+/*
+
+Section services Amenagement foncier
+
+*/
+.servicesAmenagement{
+    padding: 5rem 7rem;
+    background-color: #34EDC2;
+}
+.servicesAmenagement h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 2rem 0 5rem 0;
+    text-align: center;
+}
+.rowservicesAmenagement{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+    margin:1em;
+}
+
+.columnservicesAmenagement {
+  flex: 0 0 30.33%;
+  max-width: 30.33%;
+}
+
+.servicesAmenagement h6{
+  text-align: justify start;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1rem 0 1rem 0;
+  color: #101014;
+}
+.servicesAmenagement p{
+  text-align: justify;
+  color: #101014;
+}
+.servicesAmenagement .columnservicesAmenagement{
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
+}
+
+
+
+/* 
+-------------- 
+    Header services gestion transport
+--------------
+*/
+#hometransport{
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  align-items: center;
+  grid-gap: 20px;
+}
+#hometransport h3{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+header .texttransport p{
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  color: var(--clr-grey);
+}
+header .btntransport{
+  display: flex;
+  width: 20%;
+  gap: 2rem;
+}
+#hometransport img{
+  display: block;
+  width: 100%;
+  border-radius: 10.8rem 10.8rem 10.8rem 0.8rem;
+}
+
+header .btntransport a{
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+/*
+
+Section services gestion transport
+
+*/
+.servicestransport{
+    padding: 5rem 7rem;
+    background-color: #34EDC2;
+}
+.servicestransport h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 2rem 0 5rem 0;
+    text-align: center;
+}
+.rowservicestransport{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    margin:1em;
+}
+.servicestransport h6{
+  text-align: justify start;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1rem 0 1rem 0;
+  color: #101014;
+}
+.servicestransport p{
+  text-align: justify;
+  color: #101014;
+}
+.servicestransport .columnservicestransport{
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
+}
+
+/* 
+-------------- 
+    Header services Amenagement foncier
+--------------
+*/
+#homeagriculture{
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  align-items: center;
+  grid-gap: 20px;
+}
+#homeagriculture h3{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+header .textagriculture p{
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  color: var(--clr-grey);
+}
+header .btnagriculture{
+  display: flex;
+  width: 20%;
+  gap: 2rem;
+}
+#homeagriculture img{
+  display: block;
+  width: 100%;
+  border-radius: 10.8rem 10.8rem 10.8rem 0.8rem;
+}
+
+header .btnagriculture a{
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+/*
+
+Section services Amenagement foncier
+
+*/
+.servicesagriculture{
+    padding: 5rem 7rem;
+    background-color: #34EDC2;
+}
+.servicesagriculture h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 2rem 0 5rem 0;
+    text-align: center;
+}
+.rowservicesagriculture{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    margin:1em;
+}
+.servicesagriculture h6{
+  text-align: justify start;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1rem 0 1rem 0;
+  color: #101014;
+}
+.servicesagriculture p{
+  text-align: justify;
+  color: #101014;
+}
+.servicesagriculture .columnservicesagriculture{
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
+}
+
+
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  background-color: #FFF;
+  color: #101014;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  padding: 8px 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #FFF transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+
+

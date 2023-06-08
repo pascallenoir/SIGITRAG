@@ -66,11 +66,44 @@ nav a{
 /*elements css pour la section equipe*/
 
 /*elements css pour la section qualité*/
-.section-equipe {
+.section-qualite {
   padding: 1em 1em;
 }
 /*elements css pour la section qualité*/
 
+
+/* page contact*/
+.bloc-principal {
+  height: auto;
+  padding: 30px 30px 30px 30px;
+}
+
+.bloc-contact {
+  width: 40%;
+}
+
+/* end page contact*/
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Code CSS pour l'ecran Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.servicesImmobilier{
+  padding: 2rem 3rem;
+}
+
+.servicesAmenagement{
+  padding: 2rem 3rem;
+}
+
+.servicestransport{
+  padding: 2rem 3rem;
+}
+
+.servicesagriculture{
+  padding: 2rem 3rem;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! finCode CSS pour l'ecran Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 /* Small Devices: Landscape phones */
@@ -176,44 +209,89 @@ nav ul li a:before{
 }
 /*elements css pour la section qualité*/
 
-/*
-   page contacte
-*/
+/* page contact*/
+.bloc-principal {
+  height: auto;
+  padding: 30px 30px 30px 30px;
+}
+
 .bloc-contact {
-
-  width: 100%;
-  margin-top: 50px;
-  margin: 0px auto;
-  padding-top: 25px;
+  width: 50%;
 }
 
-form {
-  width: 100%;
-  padding: 20px;
-  height: 360px;
-}
-
-.les_sprites {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-}
-
-form button {
-  padding: 5px 30px;
-  cursor: pointer;
-  border-radius: 3px;
-  border: none;
-  font-size: 20px;
-  position: relative;
-  left: 0%;
-  top: -5px;
-  width: 100%;
-  height: 40px;
-}
+/* end page contact*/
 /*
    page contacte
 */
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Code CSS pour l'ecran Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*
+Section services gestion immobiliere
+
+*/
+.servicesImmobilier{
+  padding: 1rem;
+}
+
+.rowservicesImmobilier{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.columnservicesImmobilier {
+  flex: 0 50%;
+  max-width: 45%;
+}
+
+/*
+
+Section services Amenagement foncier
+
+*/
+.servicesAmenagement{
+  padding: 1rem;
+}
+
+.rowservicesAmenagement{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.columnservicesAmenagement {
+flex: 0 50%;
+max-width: 45%;
+}
+
+/*
+
+Section services gestion transport
+
+*/
+.servicestransport{
+  padding: 1rem;
+}
+
+.rowservicestransport{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.columnservicestransport {
+  flex: 0 50%;
+  max-width: 45%;
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! fin Code CSS pour l'ecran Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 /* Extra Small Devices: Potrait Phones*/
 @media only screen and (max-width: 576px) { 
@@ -234,50 +312,168 @@ nav ul{
 }
 /*elements css pour la section qualité*/
 
-/*
-   page contacte
-*/
-.bloc-contact {
-
-  width: 100%;
-  margin-top: 50px;
-  margin: 0px auto;
-  padding-top: 25px;
-}
-
-form {
-  width: 100%;
-  padding: 20px;
-  height: 360px;
-}
-
-
-.bloc-contact h2 {
-  margin-bottom: 10px;
-}
-
-form button {
-  padding: 5px 30px;
-  cursor: pointer;
-  border-radius: 3px;
-  border: none;
-  font-size: 20px;
-  position: relative;
-  left: 0%;
-  top: -5px;
-  width: 100%;
-  height: 40px;
-
-}
-
-.les_sprites {
-  display: flex;
+/* page contact*/
+.bloc-principal {
+  height: auto;
+  padding: 10px 0px 10px 0px;
   justify-content: center;
-  margin-top: 5px;
+}
+
+.bloc-contact {
+  width: 80%;
+}
+
+/* end page contact*/
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Code CSS pour l'ecran Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* 
+-------------- 
+    Header services gestion immobiliere
+--------------
+*/
+#homeservices{
+  grid-template-columns: 1fr;
+}
+#homeservices img{
+  grid-row: 1;
+}
+
+/* 
+-------------- 
+    Header services Amenagement foncier
+--------------
+*/
+#homeAmenagement{
+  grid-template-columns: 1fr;
+}
+#homeAmenagement img{
+  grid-row: 1;
+}
+
+/* 
+-------------- 
+    Header services gestion transport
+--------------
+*/
+#hometransport{
+  grid-template-columns: 1fr;
+}
+#hometransport img{
+  grid-row: 1;
+}
+
+/* 
+-------------- 
+    Header services Amenagement foncier
+--------------
+*/
+#homeagriculture{
+  grid-template-columns: 1fr;
+}
+
+#homeagriculture img{
+  grid-row: 1;
+}
+
+
+/*
+Section services gestion immobiliere
+
+*/
+.servicesImmobilier{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.rowservicesImmobilier{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 1em;
+}
+
+.columnservicesImmobilier {
+  flex: none;
+  max-width: none;
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+
+/*
+
+Section services Amenagement foncier
+
+*/
+.servicesAmenagement{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.rowservicesAmenagement{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 1em;
+}
+
+.columnservicesAmenagement {
+  flex: none;
+  max-width: none;
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+
+/*
+
+Section services gestion transport
+
+*/
+.servicestransport{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.rowservicestransport{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 1em;
+}
+
+.columnservicestransport {
+  flex: none;
+  max-width: none;
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
 }
 /*
-   page contacte
+
+Section services Amenagement foncier
+
 */
+.servicesagriculture{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.rowservicesagriculture{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 1em;
+}
+.columnservicesagriculture{
+  flex: none;
+  max-width: none;
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! fin Code CSS pour l'ecran Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 /* 320px (points de vue de téléphone plus petits)*/
@@ -286,48 +482,21 @@ form button {
   /*
    page contacte
 */
-  form {
-      width: 100%;
 
-      height: 360px;
-      margin: 10px auto;
 
-  }
-
-  .bloc-contact {
-      height: 100%;
-      width: 100%;
-  }
-
-  form button {
-      padding: 5px 30px;
-      cursor: pointer;
-      border-radius: 3px;
-      border: none;
-      font-size: 20px;
-      position: relative;
-      left: 0%;
-      top: -5px;
-      width: 100%;
-      height: 40px;
-
-  }
-
-  .les_sprites {
-      display: flex;
-      justify-content: center;
-      margin-top: 5px;
-  }
-
-  .spte_gmail,
-  .spte_facebook,
-  .spte_insta {
-      margin-right: 15px;
-  }
-  /*
-   page contacte
-*/
+/* page contact*/
+.bloc-principal {
+  height: auto;
+  padding: 10px 10px 20px 10px;
+  justify-content: center;
 }
 
+.bloc-contact {
+  width: 100%;
+}
+
+/* end page contact*/
+
+}
 
 
