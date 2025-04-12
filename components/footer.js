@@ -4,6 +4,31 @@ const footerTemplate = document.createElement('template');
 footerTemplate.innerHTML = `
 <style>
 
+
+
+:root {
+  --star-size: 25px;
+  --star-color: rgba(0,0,0,0.20);
+  --star-background: #000;
+  --star-backgroundcard: #fc0;
+  --couleur-orange-backgroundcard:#fbbc21;
+  --couleur-background-fond-gris: #f8f9fb;
+  --couleur-principale: #194175;
+  --couleur-principale-nuancée:#194973;
+  --couleur-arrier-plan-bleu-ciel: #e9f9ff;
+  --couleur-principale-rouge: #F32B2B;
+  --couleur-principale-rouge-nuancée: #F2C2C2;
+  --couleur-bleu-fond-complementaire: #008b88;
+  --couleur-secondaire:#FFF;
+  --texte-principal:#333;
+  --couleur-progress-container:rgba(255,255,255,0.5);
+  --couleur-box-shadow-nav:rgba(60,60,200,0.05);
+  --couleur-text-nav:#194175;
+  --couleur-text-gris:#8c98a4;
+  --couleur-text-noir:#132144;
+  --couleur-de-bordure: rgba(231, 234, 243, .7);
+}
+var(--couleur-text-noir)
 body {
   padding: 0;
   margin: 0;
@@ -13,8 +38,8 @@ body {
 }
 
 footer {
-  background-color: #34EDC2;
-  color: black;
+  background-color: var(--couleur-principale);
+  color: var(--couleur-secondaire);
   font-size: 16px;
 }
 footer * {
@@ -41,14 +66,14 @@ footer * {
 h3 {
   width: 100%;
   text-align: left;
-  color: black;
+  color: var(--couleur-principale-rouge);
   font-size: 1.4em;
   white-space: nowrap;
 }
 h1 {
   width: 100%;
   text-align: left;
-  color: white;
+  color: var(--couleur-secondaire);
   font-size: 1.4em;
   white-space: nowrap;
 }
@@ -63,11 +88,11 @@ li:not(:first-child) {
   margin-top: 0.8em;
 }
 ul li a {
-  color: black;
+  color: var(--couleur-secondaire);
   text-decoration: none;
 }
 ul li a:hover {
-  color: #2a8ded;
+  color: var(--couleur-orange-backgroundcard);
 }
 
 .about p {
@@ -84,8 +109,8 @@ button {
   margin-bottom: 5px;
 }
 button {
-  background-color: #c7940a;
-  color: #ffffff;
+  background-color: var(--couleur-orange-backgroundcard);
+  color: var(--couleur-secondaire);
 }
 div.social {
   display: flex;
@@ -95,24 +120,24 @@ div.social {
   margin-top: 0.5em;
 }
 .social i {
-  color: #bac6d9;
+  color: var(--couleur-secondaire);
   margin: 0.2em;
 }
 
 .copyright {
   padding: 0.3em 1em;
-  background-color: #25262e;
+  background-color: var(--couleur-principale-nuancée);
 }
 .copyright .localisation{
   font-size: 0.9em;
   text-align: left;
-  color: lightgray;
+  color: var(--couleur-text-gris);
 }
 
 .copyright p {
   font-size: 0.9em;
   text-align: center;
-  color: white;
+  color: var(--couleur-secondaire);
 }
 
 .Stars {
@@ -141,13 +166,13 @@ div.social {
   font-family: Times; /*make sure ★ appears correctly */
   border-radius: 3px;
   padding: 0.2em;
-  border: 0.1rem solid #000;
-  background-color: #34EDC2;
+  border: 0.1rem solid var(--couleur-text-noir);
+  background-color: var(--couleur-principale);
 
 }
 .Ratingp{
   font-size: 0.7em;
-  color: #000;
+  color:var(--couleur-text-noir);
   margin: 0;
 
 }
@@ -239,7 +264,7 @@ div.social {
         <i class="fab fa-twitter"></i>
         <i class="fab fa-whatsapp"></i>
     </div>
-    <p class="localisation">Cote d'ivoire - Abidjan_cocody Angré Nouveau CHU</p>
+    <p class="localisation">Cote d'ivoire - Abidjan Cocody, Angré Nouveau CHU</p>
     <p>Copyright &copy; 2023 Bumpy Society</p>
 </div>
 </footer>
