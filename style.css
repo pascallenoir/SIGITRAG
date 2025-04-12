@@ -25,6 +25,22 @@
   --star-color: rgba(0,0,0,0.20);
   --star-background: #000;
   --star-backgroundcard: #fc0;
+  --couleur-orange-backgroundcard:#fbbc21;
+  --couleur-background-fond-gris: #f8f9fb;
+  --couleur-principale: #194175;
+  --couleur-principale-nuancée:#194973;
+  --couleur-arrier-plan-bleu-ciel: #e9f9ff;
+  --couleur-principale-rouge: #F32B2B;
+  --couleur-principale-rouge-nuancée: #F2C2C2;
+  --couleur-bleu-fond-complementaire: #008b88;
+  --couleur-secondaire:#FFF;
+  --texte-principal:#333;
+  --couleur-progress-container:rgba(255,255,255,0.5);
+  --couleur-box-shadow-nav:rgba(60,60,200,0.05);
+  --couleur-text-nav:#194175;
+  --couleur-text-gris:#8c98a4;
+  --couleur-text-noir:#132144;
+  --couleur-de-bordure: rgba(231, 234, 243, .7);
 }
 
 * {
@@ -53,14 +69,15 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(255,255,255,0.5);
+  background-color: var(--couleur-progress-container);
   backdrop-filter: blur(0.8rem);
   z-index: 1;
 }
+
 #progress{
  width: 0;
  height: 100%;
- background-color: #34EDC2;
+ background-color:var(--couleur-principale);
 }
 /* fin Scroll Indicator */
 
@@ -74,9 +91,9 @@ nav{
   position: fixed;
   top: 1rem;
   left: 0;
-  background-color: rgba(255,255,255,0.5);
+  background-color: var(--couleur-progress-container);
   backdrop-filter: blur(8px);
-  box-shadow: 0 1.5rem 2rem rgba(60,60,200,0.05);
+  box-shadow: 0 1.5rem 2rem var(--couleur-box-shadow-nav);
   z-index: 1;
 }
 nav .fas{
@@ -94,21 +111,27 @@ nav ul{
   gap: 2rem;
 }
 nav a{
-  color: #101014;
+  color: var(--couleur-text-nav);
   text-decoration: none;
   display: block;
   position: relative;
   font-size: 1.8rem;
   font-family: "latoregular", "sans-serif";
-  font-weight: 400;
+  font-weight: 600;
 }
+
+nav a img{
+  width: 100%;
+  height: 55px;
+}
+
 nav li a:before{
   content: "";
   position: absolute;
   width: 0;
   height: 50%;
   bottom: 0;
-  border-bottom: 3px solid #34EDC2;
+  border-bottom: 3px solid var(--couleur-principale-rouge);
   margin-left: -5%;
   transition: width 0.5s;
 }
@@ -144,9 +167,9 @@ main {
     background-size: cover;
     -o-background-size: cover;
     text-align: left;
-    color: #fff;
-    text-shadow: 2px 2px 8px #101014;
-    background-color: #101014;
+    color: var(--couleur-secondaire);
+    text-shadow: 2px 2px 8px var(--couleur-text-nav);
+    background-color: var(--couleur-text-nav);
     height: 450px;
     display: flex;
     align-items: flex-end;
@@ -180,6 +203,10 @@ main {
   text-decoration: none;
 }
 
+.strong-hero-header{
+  font-weight: bold;
+  color:  var(--couleur-secondaire);
+}
 
 /* bouton d'action du slide */
 .btn-primary{
@@ -190,12 +217,12 @@ main {
     transition: 0.5s;
 }
 .btn-primary{
-    background-color: #101014;
-    color: #FFF;
+    background-color: var(--star-background);
+    color: var(--couleur-secondaire);
     font-size: 15px;
 }
 .btn-primary:hover{
-    background-color: #34EDC2;
+    background-color: var(--couleur-principale);
 }
 
 .hero-header .video-holder {
@@ -208,7 +235,6 @@ main {
 }
 
 .lead1 {
-
     font-size: 15px !important;
 }
 
@@ -283,7 +309,7 @@ main {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 40%;
-  background-color: #FFF;
+  background-color: var(--couleur-secondaire);
 }
 
 .contenupresentationAbout{
@@ -307,7 +333,7 @@ h4{
 .titreEtParagrapheAbout p{
   text-align: justify;
   letter-spacing: 0.1rem;
-  color: #101014;
+  color: var(--couleur-text-nav);
 }
 
 .imgAbout{
@@ -333,13 +359,13 @@ h4{
 /* elements css pour la section services*/
 .section-services  {
   padding: 1em 3em;
-  background-color: #FFA55F;
+  background-color: var(--couleur-principale-rouge-nuancée);
 }
 .titreSectionCenterservices {
   width: 100%;
   text-align: center;
   font-size: 2.5em;
-  color: #FFF;
+  color:  var(--couleur-secondaire);
 }
 .rowservices {
   display: flex;
@@ -363,23 +389,23 @@ h4{
 .h3services {
   font-size: 20px;
   font-weight: 600;
-  color: #101014;
+  color:var(--couleur-text-nav);
   margin: 1em 0;
 }
 .pservices {
-  color: #FFF;
+  color:  var(--couleur-text-noir);
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.03em;
 }
 .icon-wrapperservices {
-  background-color: #101014;
+  background-color:  var(--couleur-text-nav);
   position: relative;
   margin: auto;
   font-size: 30px;
   height: 2.5em;
   width: 2.5em;
-  color: #fff;
+  color:  var(--couleur-secondaire);
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -389,25 +415,25 @@ h4{
   background-position: 0 100%;
 }
 .cardservices:hover .icon-wrapperservices {
-  background-color: #ffffff;
-  color: #101014;
+  background-color:  var(--couleur-secondaire);
+  color: var(--couleur-text-nav);
 }
 .cardservices:hover .h3services {
-  color: #ffffff;
+  color:  var(--couleur-secondaire);
 }
 .cardservices:hover .pservices {
-  color: #f0f0f0;
+  color:  var(--couleur-text-noir);
 }
-/* fin elements css pour la section service*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ fin elements css pour la section service*/
 
 
-/*elements css pour la section equipe*/
+/****************************************************************************elements css pour la section equipe*/
 .section-equipe {
   padding: 1em 3em;
 }
-.cardequipe {
+/* .cardequipe {
   padding: 5em 1em;
-}
+} */
 .columnequipe {
   flex: 0 0 33.33%;
   max-width: 33.33%;
@@ -425,7 +451,7 @@ h4{
   text-align: center;
   font-size: 4rem;
   margin-bottom: 2rem;
-  color: #101014;
+  color: var(--couleur-text-nav);
 }
 
 .titreSectionCenterwhite {
@@ -433,7 +459,7 @@ h4{
   text-align: center;
   font-size: 4rem;
   margin-bottom: 2rem;
-  color: #FFF;
+  color:  var(--couleur-secondaire);
 }
 
 .titreSectionLeft {
@@ -441,7 +467,7 @@ h4{
   text-align: left;
   font-size: 4rem;
   margin-bottom: 2rem;
-  color: #101014;
+  color: var(--couleur-text-nav);
 }
 
 .titreSectionRight {
@@ -449,28 +475,29 @@ h4{
     text-align: right;
     font-size: 4rem;
     margin-bottom: 2rem;
-    color: #101014;
+    color: var(--couleur-text-nav);
 }
 
 .cardequipe {
-  box-shadow: 0 0 2em rgba(25, 0, 58, 0.1);
-  border-radius: 0.6em;
-  padding: 1.5em 1em;
+  border: .0625rem solid var(--couleur-de-bordure);
+  padding: 1em;
   cursor: pointer;
-  color: #101014;
+  color:  var(--couleur-text-nav);
   transition: 1s;
-  background-color: #ffffff;
+  background-color:  var(--couleur-secondaire);
+  border-radius: 0;
+  box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
 }
 
 .cardequipe .img-containerequipe {
-  width: 8em;
-  height: 8em;
-  background-color: #34EDC2;
-  padding: 0.5em;
+  width: 5em;
+  height: 5em;
+  background-color: var(--couleur-principale);  /*#34EDC2 */
+  padding: 0.1em;
   border-radius: 50%;
-  margin: 0 auto 2em auto;
+  transition: 1s;
+  margin: 0 auto 1em auto;
 }
-
 
 .cardequipe img {
   width: 100%;
@@ -478,54 +505,64 @@ h4{
 }
 
 .cardequipe #h3equipe {
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 auto 0.5em auto;
+  color: var(--couleur-text-noir);
 }
 
-.cardequipe p {
-    font-weight: 400;
-    margin: 0em 0 2.5em 0;
-    color: #808080;
-    letter-spacing: 2px;
+.proleequipe{
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--couleur-principale);
+
+}
+
+.pdescriptionequipe{
+  font-size: .900rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0em 0 0.8em 0;
+  text-align: center;
+  color: var(--couleur-text-gris);
+
 }
  
 .iconsequipe {
   width: 50%;
-  min-width: 180px;
+  min-width: 140px;
   margin: auto;
   display: flex;
   justify-content: space-between;
+  color: var(--couleur-text-gris);
 }
 
 .cardequipe a {
   text-decoration: none;
   color: inherit;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 .cardequipe:hover {
-  background: linear-gradient(#2BC29F, #33E8BE);
-  padding: 2em 1em;
-  color: #ffffff;
+  box-shadow: 0 0 2em rgba(30, 81, 123, 0.8);
+  padding: 0.8em;
 }
 
 .cardequipe:hover .img-containerequipe {
   transform: scale(1.15);
 }
 
-.cardequipe:hover p{
-    color: #ffffff;
-}
-
 .iconcolorequipe:hover {
-   color: #101014;
+   color: var(--couleur-text-noir);
 }
 /* fin elements css pour la section equipe*/
 
 /* elements css pour la section qualité*/
 .section-qualite  {
   padding: 1em 3em;
-  background-color: #f8f9fb;
+  background-color: var(--couleur-background-fond-gris);
 }
 .rowqualite {
   display: flex;
@@ -543,8 +580,8 @@ h4{
   box-shadow: 0 0 2em rgba(25, 0, 58, 0.1);
   border-radius: 0.6em;
   padding: 1.5em 1em;
-  color: #101014;
-  background-color: #ffffff;
+  color: var(--couleur-text-noir);
+  background-color: var(--couleur-secondaire);
 }
 
 .pqualite{
@@ -579,18 +616,18 @@ h4{
 }
 
 .columnvaleurentreprise p{
-  color: #101014;
+  color: var(--couleur-text-noir);
   font-size: 15px;
 }
 
 .icon-valeurentreprise {
-  background-color: #101014;
+  background-color: var(--couleur-text-nav);
   position: relative;
   margin: auto;
   font-size: 30px;
   height: 1.5em;
   width: 1.5em;
-  color: #ffffff;
+  color:  var(--couleur-secondaire);
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -607,16 +644,16 @@ h4{
   position: fixed;
   right: 2rem;
   bottom: 2rem;
-  background-color: #34EDC2;
+  background-color: var(--couleur-principale);
   border: none;
   outline: none;
-  border: 0.4rem solid #FFF;
+  border: 0.4rem solid  var(--couleur-secondaire);
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px rgba(0,0,0,0.12);
   display: none;
 }
 #scroll-top-btn .fas{
-  color: #FFF;
+  color:  var(--couleur-secondaire);
   font-size: 2rem;
   line-height: 0;
 }
@@ -650,22 +687,23 @@ h4{
 .bloc-contact {
   width: 35%;
   height: auto;
-  background-color: #fff;
+  background-color:  var(--couleur-secondaire);
   border-radius: 10px;
   box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
 }
 
 .head-formular {
-  text-align: left;
+  text-align: center;
   font-size: 2rem;
   margin: 15px;
+  color: var(--couleur-principale-nuancée);
 }
 
 .bloc-contact p{
   text-align: left justify;
   font-size: 1rem;
   margin: 15px;
-  color: gray;
+  color: var(--couleur-text-gris);
 }
 
 
@@ -696,12 +734,12 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  background-color: #000;
-  color: #FFF;
+  background-color: var(--star-background);
+  color:  var(--couleur-secondaire);
 }
 
 button:hover {
-  background-color: #33E8BE;
+  background-color: var(--couleur-principale);
   transition: .7s ease;
   box-shadow: 0 10px 15px rgba(0,0,0,0.12);
 
@@ -711,7 +749,7 @@ input,
 textarea {
   flex-basis: 95%;
   padding: 10px;
-  border: .2px solid lightgray;
+  border: .2px solid var(--couleur-de-bordure);
   border-radius: 6px;
   outline: none;
 }
@@ -722,7 +760,7 @@ input {
 
 input:focus {
   height: 40px;
-  border: .2px solid #34EDC2;
+  border: .2px solid var(--couleur-principale);
   box-shadow: 0 10px 15px rgba(0,0,0,0.12);
 
 }
@@ -741,7 +779,7 @@ textarea:focus {
   height: 170px;
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
   line-height: 23px;
-  border: .2px solid #34EDC2;
+  border: .2px solid var(--couleur-principale);
     box-shadow: 0 10px 15px rgba(0,0,0,0.12);
 
 }
@@ -795,13 +833,14 @@ Section services gestion immobiliere
 */
 .servicesImmobilier{
     padding: 5rem 7rem;
-    background-color: #34EDC2;
+    background-color: var(--couleur-principale-nuancée);
 }
 .servicesImmobilier h3{
     font-size: 3.2rem;
     font-weight: 700;
     margin: 2rem 0 5rem 0;
     text-align: center;
+    color: var(--couleur-secondaire);
 }
 
 .rowservicesImmobilier{
@@ -815,15 +854,15 @@ Section services gestion immobiliere
   font-size: 1.8rem;
   font-weight: 700;
   margin: 1rem 0 1rem 0;
-  color: #101014;
+  color:  var(--couleur-text-nav);
 }
 .servicesImmobilier p{
   text-align: justify;
-  color: #101014;
+  color: var(--couleur-text-nav);
 }
 .servicesImmobilier .columnservicesImmobilier{
   padding: 2rem;
-  background-color: #ffffff;
+  background-color:  var(--couleur-secondaire);
   border-radius: 0.8rem;
   box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
 }
@@ -872,13 +911,14 @@ Section services Amenagement foncier
 */
 .servicesAmenagement{
     padding: 5rem 7rem;
-    background-color: #34EDC2;
+    background-color: var(--couleur-bleu-fond-complementaire);
 }
 .servicesAmenagement h3{
     font-size: 3.2rem;
     font-weight: 700;
     margin: 2rem 0 5rem 0;
     text-align: center;
+    color: var(--couleur-secondaire);
 }
 .rowservicesAmenagement{
     display: flex;
@@ -898,15 +938,15 @@ Section services Amenagement foncier
   font-size: 1.8rem;
   font-weight: 700;
   margin: 1rem 0 1rem 0;
-  color: #101014;
+  color: var(--couleur-text-nav);
 }
 .servicesAmenagement p{
   text-align: justify;
-  color: #101014;
+  color: var(--couleur-text-nav);
 }
 .servicesAmenagement .columnservicesAmenagement{
   padding: 2rem;
-  background-color: #ffffff;
+  background-color:  var(--couleur-secondaire);
   border-radius: 0.8rem;
   box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
 }
@@ -957,13 +997,14 @@ Section services gestion transport
 */
 .servicestransport{
     padding: 5rem 7rem;
-    background-color: #34EDC2;
+    background-color: var(--couleur-principale-nuancée);
 }
 .servicestransport h3{
     font-size: 3.2rem;
     font-weight: 700;
     margin: 2rem 0 5rem 0;
     text-align: center;
+    color: var(--couleur-secondaire);
 }
 .rowservicestransport{
     display: flex;
@@ -976,15 +1017,15 @@ Section services gestion transport
   font-size: 1.8rem;
   font-weight: 700;
   margin: 1rem 0 1rem 0;
-  color: #101014;
+  color: var(--couleur-text-nav);
 }
 .servicestransport p{
   text-align: justify;
-  color: #101014;
+  color: var(--couleur-text-nav);
 }
 .servicestransport .columnservicestransport{
   padding: 2rem;
-  background-color: #ffffff;
+  background-color:  var(--couleur-secondaire);
   border-radius: 0.8rem;
   box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
 }
@@ -1033,13 +1074,14 @@ Section services Amenagement foncier
 */
 .servicesagriculture{
     padding: 5rem 7rem;
-    background-color: #34EDC2;
+    background-color: var(--couleur-bleu-fond-complementaire);
 }
 .servicesagriculture h3{
     font-size: 3.2rem;
     font-weight: 700;
     margin: 2rem 0 5rem 0;
     text-align: center;
+    color: var(--couleur-secondaire);
 }
 .rowservicesagriculture{
     display: flex;
@@ -1052,19 +1094,18 @@ Section services Amenagement foncier
   font-size: 1.8rem;
   font-weight: 700;
   margin: 1rem 0 1rem 0;
-  color: #101014;
+  color: var(--couleur-text-nav);
 }
 .servicesagriculture p{
   text-align: justify;
-  color: #101014;
+  color: var(--couleur-text-nav);
 }
 .servicesagriculture .columnservicesagriculture{
   padding: 2rem;
-  background-color: #ffffff;
+  background-color:  var(--couleur-secondaire);
   border-radius: 0.8rem;
   box-shadow: 0 0 2em rgba(0, 0, 50, 0.1);
 }
-
 
 
 /* Popup container - can be anything you want */
@@ -1081,8 +1122,8 @@ Section services Amenagement foncier
 /* The actual popup */
 .popup .popuptext {
   visibility: hidden;
-  background-color: #FFF;
-  color: #101014;
+  background-color:  var(--couleur-secondaire);
+  color: var(--couleur-text-nav);
   text-align: center;
   font-size: 1.5rem;
   border-radius: 6px;
@@ -1103,7 +1144,7 @@ Section services Amenagement foncier
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #FFF transparent transparent transparent;
+  border-color:  var(--couleur-secondaire) transparent transparent transparent;
 }
 
 /* Toggle this class - hide and show the popup */
